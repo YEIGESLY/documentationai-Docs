@@ -58,6 +58,7 @@
           },
           {
             "group": "Primeros Pasos",
+            "path": "02-primeros-pasos",
             "icon": "compass",
             "pages": [
               {
