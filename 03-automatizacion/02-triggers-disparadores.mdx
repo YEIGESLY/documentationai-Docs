@@ -1,7 +1,39 @@
 ---
-title: Triggers y Disparadores de Flujo
-description: Todos los tipos de disparadores para iniciar automatizaciones.
+title: Introducción al Constructor de Flujos
+description: >-
+  Conoce el Flow Builder, la herramienta visual para crear automatizaciones sin
+  código.
 ---
-Los triggers definen qué evento inicia un flujo.
+El Flow Builder es un constructor visual tipo "arrastrar y soltar" para crear chatbots y flujos de conversación sin código.
 
-Prueba
+## ¿Qué es el Flow Builder?
+
+Es la herramienta central de automatización. Diseña conversaciones interactivas que respondan automáticamente, guíen procesos de venta y escalen a humanos.
+
+## Bloques Disponibles
+
+| Tipo              | Función                                       |
+| ----------------- | --------------------------------------------- |
+| Enviar mensaje    | Texto, imágenes, botones, listas, documentos  |
+| Preguntar usuario | Captura texto, número, email, teléfono, fecha |
+| Condición         | Ramifica según respuestas o variables         |
+| Temporizador      | Espera programada (segundos a 24h)            |
+| HTTP Request      | Llamadas a APIs externas                      |
+| Asignar agente    | Transfiere a humano                           |
+
+## Cómo Funciona
+
+```mermaid
+flowchart TD
+    A[Mensaje] --> B{¿Palabra clave?}
+    B -->|Sí| C[Responder info]
+    B -->|No| D{¿Horario?}
+    D -->|Sí| E[Transferir a agente]
+    D -->|No| F[Fuera de horario]
+    C --> G[Fin]
+    E --> G
+    F --> G
+```
+
+Empieza simple: flujo de bienvenida con 3-4 bloques.
+
