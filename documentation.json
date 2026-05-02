@@ -47,7 +47,7 @@
                     "icon": "message-square-text"
                   }
                 ],
-                "icon": "brick-wall-icon"
+                "icon": "layout-icon"
               },
               {
                 "group": "Primeros Pasos",
@@ -93,7 +93,7 @@
                     "path": "02-primeros-pasos/02-09-conectar-numero"
                   }
                 ],
-                "icon": "lucide-newspaper"
+                "icon": "lucide-zap"
               },
               {
                 "group": "Automatización",
@@ -506,6 +506,11 @@
                 "path": "10-recursos/10-glosario"
               }
             ]
+          },
+          {
+            "group": "Ventas",
+            "pages": [],
+            "icon": "lucide-shopping-cart"
           }
         ]
       },
