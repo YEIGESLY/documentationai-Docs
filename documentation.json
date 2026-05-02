@@ -19,11 +19,6 @@
             "icon": "home",
             "pages": [
               {
-                "group": "Ventas",
-                "pages": [],
-                "icon": "lucide-shopping-cart"
-              },
-              {
                 "group": "Panorama General",
                 "pages": [
                   {
@@ -239,64 +234,64 @@
                   }
                 ],
                 "icon": "lucide-trending-up"
-              }
-            ]
-          },
-          {
-            "group": "Ventas",
-            "icon": "shopping-cart",
-            "pages": [
-              {
-                "title": "Catálogos de Productos",
-                "path": "05-ventas/01-catalogos-productos"
               },
               {
-                "title": "Catálogos Carousel",
-                "path": "05-ventas/02-catalogos-carousel"
-              },
-              {
-                "title": "WooCommerce Intro",
-                "path": "05-ventas/03-woocommerce-intro"
-              },
-              {
-                "title": "WooCommerce Pedidos",
-                "path": "05-ventas/04-woocommerce-pedidos"
-              },
-              {
-                "title": "Shopify Conexión",
-                "path": "05-ventas/05-shopify-conexion"
-              },
-              {
-                "title": "Shopify Carrito Abandonado",
-                "path": "05-ventas/06-shopify-carrito-abandonado"
-              },
-              {
-                "title": "Shopify Notificaciones",
-                "path": "05-ventas/07-shopify-notificaciones"
-              },
-              {
-                "title": "Confirmar Pedidos COD",
-                "path": "05-ventas/08-confirmar-pedidos-cod"
-              },
-              {
-                "title": "Convertir COD Prepago",
-                "path": "05-ventas/09-convertir-cod-prepago"
-              },
-              {
-                "title": "WordPress Users HTTP",
-                "path": "05-ventas/10-wordpress-users-http"
-              },
-              {
-                "title": "Ventas Webchat",
-                "path": "05-ventas/11-ventas-webchat"
-              },
-              {
-                "title": "Embed Signup WooCommerce",
-                "path": "05-ventas/12-embed-signup-woocommerce"
-              },
-              {
-                "title": "CTA WhatsApp Ads",
-                "path": "05-ventas/13-cta-whatsapp-ads"
+                "group": "Ventas",
+                "pages": [
+                  {
+                    "title": "Catálogos de Productos",
+                    "path": "05-ventas/01-catalogos-productos"
+                  },
+                  {
+                    "title": "Catálogos Carousel",
+                    "path": "05-ventas/02-catalogos-carousel"
+                  },
+                  {
+                    "title": "WooCommerce Intro",
+                    "path": "05-ventas/03-woocommerce-intro"
+                  },
+                  {
+                    "title": "WooCommerce Pedidos",
+                    "path": "05-ventas/04-woocommerce-pedidos"
+                  },
+                  {
+                    "title": "Shopify Conexión",
+                    "path": "05-ventas/05-shopify-conexion"
+                  },
+                  {
+                    "title": "Shopify Carrito Abandonado",
+                    "path": "05-ventas/06-shopify-carrito-abandonado"
+                  },
+                  {
+                    "title": "Shopify Notificaciones",
+                    "path": "05-ventas/07-shopify-notificaciones"
+                  },
+                  {
+                    "title": "Confirmar Pedidos COD",
+                    "path": "05-ventas/08-confirmar-pedidos-cod"
+                  },
+                  {
+                    "title": "Convertir COD Prepago",
+                    "path": "05-ventas/09-convertir-cod-prepago"
+                  },
+                  {
+                    "title": "WordPress Users HTTP",
+                    "path": "05-ventas/10-wordpress-users-http"
+                  },
+                  {
+                    "title": "Ventas Webchat",
+                    "path": "05-ventas/11-ventas-webchat"
+                  },
+                  {
+                    "title": "Embed Signup WooCommerce",
+                    "path": "05-ventas/12-embed-signup-woocommerce"
+                  },
+                  {
+                    "title": "CTA WhatsApp Ads",
+                    "path": "05-ventas/13-cta-whatsapp-ads"
+                  }
+                ],
+                "icon": "lucide-shopping-cart"
               }
             ]
           },
