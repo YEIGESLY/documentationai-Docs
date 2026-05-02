@@ -1,9 +1,10 @@
 ---
-title: "Mensaje de Bienvenida, Icebreakers y Comandos"
-description: "Configura el mensaje de bienvenida, preguntas rompehielo y comandos para tus chatbots de WhatsApp."
+title: 'Mensaje de Bienvenida, Icebreakers y Comandos'
+description: >-
+  Configura el mensaje de bienvenida, preguntas rompehielo y comandos para tus
+  chatbots de WhatsApp.
 ---
-
-<Callout kind="info">
+<Callout kind="info" collapsed="false">
   El primer mensaje que recibe un usuario define toda su experiencia. Con E-SMART360 puedes configurar un mensaje de bienvenida automático, icebreakers para iniciar conversaciones y comandos para acciones rápidas.
 </Callout>
 
@@ -14,37 +15,46 @@ El mensaje de bienvenida se envía automáticamente cuando un usuario inicia una
 ### Cómo Configurarlo
 
 <Steps>
-  <Step title="Accede al Bot Manager">
+  <Step title="Accede al Bot Manager" title-type="p">
     En tu panel de E-SMART360, ve a **WhatsApp > Bot Manager**.
   </Step>
-  <Step title="Encuentra la sección de Acciones">
+
+  <Step title="Encuentra la sección de Acciones" title-type="p">
     Desplázate hacia abajo y haz clic en **"Actions"** o **"Bot Actions"**.
   </Step>
-  <Step title="Edita el mensaje 'Get Started'">
+
+  <Step title="Edita el mensaje 'Get Started'" title-type="p">
     Por defecto hay un mensaje de texto. Edita el contenido para que sea:
-    - **Cálido y profesional**: "¡Hola! Bienvenido a [Tu Negocio] 👋"
+
+    - **Cálido y profesional**: "¡Hola! Bienvenido a \[Tu Negocio] 👋"
+
     - **Informativo**: "Estoy aquí para ayudarte. ¿En qué puedo servirte?"
+
     - **Con opciones**: Muestra un menú de opciones si es posible
   </Step>
-  <Step title="Activa el mensaje desde WhatsApp Manager">
+
+  <Step title="Activa el mensaje desde WhatsApp Manager" title-type="p">
     1. Ve a **WhatsApp Business Manager > Phone Numbers**
+
     2. Haz clic en el ícono de ajustes de tu número
+
     3. Selecciona **"Automations"**
+
     4. Activa **"Welcome Messages"**
   </Step>
 </Steps>
 
-<Callout kind="tip">
+<Callout kind="tip" collapsed="false">
   **Ejemplo de bienvenida efectiva:**
-  
-  "¡Hola {{nombre}}! 👋 Bienvenido a E-SMART360. 
-  
+
+  "¡Hola ! 👋 Bienvenido a E-SMART360.
+
   Soy el asistente virtual. ¿Qué te gustaría hacer hoy?
-  
+
   1️⃣ Conocer nuestros servicios
   2️⃣ Hablar con un asesor
   3️⃣ Recibir información de precios
-  
+
   Responde con el número de tu opción 🔢"
 </Callout>
 
@@ -55,9 +65,13 @@ Los icebreakers son preguntas predefinidas que aparecen como botones en la conve
 ### Configuración desde WhatsApp Manager
 
 1. Ve a **WhatsApp Business Manager > Phone Numbers > Settings**
+
 2. Selecciona **"Automations"** y luego **"Icebreakers"**
+
 3. Haz clic en **"Edit"**
+
 4. Agrega hasta **4 preguntas** que ayuden a calificar leads
+
 5. Guarda los cambios
 
 ### Configuración en E-SMART360
@@ -65,16 +79,18 @@ Los icebreakers son preguntas predefinidas que aparecen como botones en la conve
 Para que los icebreakers sean funcionales:
 
 1. En **Bot Manager**, crea un bot por cada pregunta icebreaker
+
 2. Usa la pregunta completa como **keyword** (coincidencia exacta)
+
 3. Desarrolla el flujo de respuesta para cada pregunta
 
 **Ejemplos de icebreakers por industria:**
 
-| Industria | Icebreaker 1 | Icebreaker 2 | Icebreaker 3 |
-|-----------|--------------|--------------|--------------|
-| **Restaurante** | ¿Quieres ver el menú? | ¿Hacer una reservación? | ¿Ordenar a domicilio? |
-| **Tienda online** | ¿Qué categoría te interesa? | ¿Necesitas ayuda con tu pedido? | ¿Quieres ver ofertas? |
-| **Servicios profesionales** | ¿Agendar una consulta? | ¿Conocer nuestros precios? | ¿Hablar con un asesor? |
+| Industria                   | Icebreaker 1                | Icebreaker 2                    | Icebreaker 3           |
+| --------------------------- | --------------------------- | ------------------------------- | ---------------------- |
+| **Restaurante**             | ¿Quieres ver el menú?       | ¿Hacer una reservación?         | ¿Ordenar a domicilio?  |
+| **Tienda online**           | ¿Qué categoría te interesa? | ¿Necesitas ayuda con tu pedido? | ¿Quieres ver ofertas?  |
+| **Servicios profesionales** | ¿Agendar una consulta?      | ¿Conocer nuestros precios?      | ¿Hablar con un asesor? |
 
 ## Comandos
 
@@ -83,30 +99,36 @@ Los comandos permiten a los usuarios ejecutar acciones específicas escribiendo 
 ### Cómo Configurar Comandos
 
 <Steps>
-  <Step title="Agrega comandos en WhatsApp Manager">
+  <Step title="Agrega comandos en WhatsApp Manager" title-type="p">
     1. Ve a **WhatsApp Manager > Phone Numbers > Settings**
+
     2. Selecciona **"Commands"** y haz clic en **"Edit"**
+
     3. Agrega comandos como: `/ayuda`, `/precios`, `/contacto`, `/agendar`
+
     4. Agrega una descripción para cada comando
+
     5. Guarda los cambios
   </Step>
-  <Step title="Crea bots para cada comando en E-SMART360">
+
+  <Step title="Crea bots para cada comando en E-SMART360" title-type="p">
     En **Bot Manager**, crea un bot usando el comando completo como keyword (ej: "/precios").
   </Step>
-  <Step title="Configura las respuestas">
+
+  <Step title="Configura las respuestas" title-type="p">
     Define lo que el chatbot responderá cuando alguien use ese comando. Puede ser texto, imágenes, botones interactivos o un flujo completo.
   </Step>
 </Steps>
 
 ### Ejemplos de Comandos Útiles
 
-| Comando | Función | Respuesta sugerida |
-|---------|---------|-------------------|
-| `/ayuda` | Menú de ayuda principal | Lista de opciones disponibles |
-| `/precios` | Información de planes | Tabla de precios o enlace |
-| `/agendar` | Agendar cita | Calendario de disponibilidad |
-| `/horario` | Horario de atención | Horarios y días laborales |
-| `/humano` | Hablar con agente | Transferencia a agente humano |
+| Comando    | Función                 | Respuesta sugerida            |
+| ---------- | ----------------------- | ----------------------------- |
+| `/ayuda`   | Menú de ayuda principal | Lista de opciones disponibles |
+| `/precios` | Información de planes   | Tabla de precios o enlace     |
+| `/agendar` | Agendar cita            | Calendario de disponibilidad  |
+| `/horario` | Horario de atención     | Horarios y días laborales     |
+| `/humano`  | Hablar con agente       | Transferencia a agente humano |
 
 ## Botón de Ubicación
 
@@ -115,17 +137,28 @@ El componente de ubicación permite a los usuarios compartir su ubicación con s
 ### Cómo Activarlo
 
 1. En el editor de bots de E-SMART360, agrega un nuevo **componente de ubicación**
+
 2. Escribe un texto descriptivo: "Comparte tu ubicación para encontrarte más rápido 📍"
+
 3. El usuario verá un botón **"Enviar ubicación"**
+
 4. Cuando lo presione, la ubicación se almacenará en la información del contacto
 
 **Usos prácticos:**
+
 - Negocios locales: "¿Quieres saber cuál es nuestra sucursal más cercana?"
+
 - Logística: "Comparte tu ubicación para calcular el tiempo de entrega"
+
 - Servicios a domicilio: "Necesitamos tu ubicación para enviar a un técnico"
 
 ## Próximos Pasos
 
 - [Crear bots basados en keywords](/03-automatizacion/01-flow-builder-intro)
+
 - [Configurar respuestas para preguntas frecuentes](/03-automatizacion/09-keywords-bot)
+
 - [Diseñar secuencias de ventas](/04-marketing/12-secuencias-messenger)
+
+-
+
