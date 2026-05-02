@@ -1,0 +1,115 @@
+---
+title: "Resolver Respuestas Duplicadas en el Bot de WhatsApp"
+description: "Guía para identificar y solucionar cuando tu chatbot de WhatsApp envía respuestas duplicadas a los usuarios."
+---
+
+<Callout kind="warning">
+  ¿Tu chatbot está enviando el mismo mensaje dos o más veces? Las respuestas duplicadas son un problema común que puede afectar la experiencia del usuario y la calidad de tu número en WhatsApp.
+</Callout>
+
+## ¿Por Qué Ocurren las Respuestas Duplicadas?
+
+Las causas más comunes son:
+
+<Columns>
+  <Card title="📌 Múltiples Bots Activados">
+    Dos o más bots coinciden con la misma keyword o condición, y ambos se ejecutan simultáneamente.
+  </Card>
+  <Card title="🔁 Palabras Clave Redundantes">
+    Varios bots tienen keywords similares o que se contienen entre sí (ej: "gracias" y "muchas gracias").
+  </Card>
+  <Card title="⚙️ Webhook Mal Configurado">
+    El webhook de WhatsApp se está llamando múltiples veces o desde múltiples fuentes.
+  </Card>
+  <Card title="🔄 Bucles en el Flujo del Bot">
+    El flujo del bot regresa a un paso anterior creando un ciclo infinito de respuestas.
+  </Card>
+</Columns>
+
+## Diagnóstico Rápido
+
+Antes de hacer cambios, identifica el patrón del problema:
+
+| Síntoma | Causa probable |
+|---------|---------------|
+| **Siempre el mismo mensaje duplicado** | Múltiples bots con misma keyword |
+| **Duplicado intermitente** | Coincidencia parcial de keywords |
+| **Duplicado con diferentes mensajes** | Bots en diferentes niveles (keyword + no-match) |
+| **Duplicado solo al inicio** | Mensaje de bienvenida + bot de bienvenida |
+| **Cadena de mensajes repetidos** | Bucle en el flujo |
+
+## Soluciones
+
+### 1. Revisión de Keywords
+
+El problema más frecuente es tener múltiples bots que responden al mismo mensaje.
+
+<Tabs>
+  <Tab label="Coincidencia Exacta">
+    Cambia todas tus keywords a **coincidencia exacta** en lugar de parcial. Así evitas que un bot responda cuando otro bot también coincide parcialmente.
+  </Tab>
+  <Tab label="Prioridad de Bots">
+    Organiza tus bots por prioridad. El bot con mayor prioridad se ejecuta primero. Si coincide, los bots de menor prioridad no deberían ejecutarse.
+  </Tab>
+  <Tab label="Keywords Únicas">
+    Revisa que no tengas dos bots con la misma keyword. Un simple grep de tus keywords puede revelar duplicados.
+  </Tab>
+</Tabs>
+
+### 2. Verificar el No Match
+
+El bot de "No Match" (respuesta cuando no hay coincidencia) a veces se activa junto con otro bot si no está correctamente configurado.
+
+1. Ve a **Bot Manager > Actions** en E-SMART360
+2. Revisa la configuración del **No Match Reply**
+3. Asegúrate de que **No Match Reply Frequency** esté configurado como "Once Per Day" o que solo se active cuando ningún otro bot haya respondido
+
+### 3. Revisar el Webhook
+
+<Steps>
+  <Step title="Verifica la URL del webhook">
+    En WhatsApp Business Manager, revisa que la URL del webhook apunte exclusivamente a E-SMART360 y no haya duplicados.
+  </Step>
+  <Step title="Revisa los logs de entrega">
+    En E-SMART360, ve a **Logs > Webhook** y verifica si hay llamadas duplicadas al webhook.
+  </Step>
+  <Step title="Verifica el campo 'status'">
+    Asegúrate de que el webhook solo procese mensajes con status "sent" y no reprocese mensajes antiguos.
+  </Step>
+</Steps>
+
+### 4. Desactivar Respuestas en Múltiples Canales
+
+Si tienes activados tanto el chatbot automático como respuestas manuales en la bandeja de entrada:
+
+1. Ve a **Configuración > Bandeja de Entrada**
+2. Desactiva **"Respuesta automática"** si un agente ya respondió
+3. Habilita **"Solo un agente por conversación"**
+
+<Callout kind="tip">
+  **Regla de oro**: Cada mensaje entrante debe ser procesado por UNA sola regla o bot. Si tienes dudas, desactiva bots de prueba y reactívalos uno por uno.
+</Callout>
+
+## Prevención
+
+Para evitar respuestas duplicadas desde el inicio:
+
+- **Mantén un inventario** de todas tus keywords y bots
+- **Usa nombres descriptivos** para cada bot (facilita identificar duplicados)
+- **Prueba cada bot individualmente** antes de activarlo
+- **Revisa periódicamente** los logs de conversaciones para detectar patrones extraños
+- **Configura límites de frecuencia** para el No Match Reply
+
+## Solución Rápida: Reinicio
+
+Si necesitas una solución inmediata mientras investigas:
+
+1. **Desactiva temporalmente** todos los bots excepto el principal
+2. **Verifica** si el duplicado desaparece
+3. **Reactiva** los bots uno por uno para identificar al culpable
+
+## Próximos Pasos
+
+- [Configurar el No Match Reply correctamente](/03-automatizacion/19-respuestas-fuera-horario)
+- [Revisar la configuración de webhooks](/07-integraciones/01-google-sheets-importar)
+- [Optimizar la estructura de tus bots](/03-automatizacion/01-flow-builder-intro)

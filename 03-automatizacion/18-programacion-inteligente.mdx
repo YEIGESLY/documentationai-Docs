@@ -1,0 +1,113 @@
+---
+title: "Programación Inteligente de Respuestas (Smart Delay)"
+description: "Aprende a programar respuestas de chatbot con retrasos de 0 segundos hasta 24 horas para crear conversaciones más naturales y efectivas."
+---
+
+<Callout kind="info">
+  El Smart Delay es una función de temporización que te permite programar respuestas de chatbot con retrasos precisos, desde 0 segundos hasta 24 horas, para simular conversaciones humanas y optimizar el engagement.
+</Callout>
+
+## ¿Qué es el Smart Delay?
+
+El Smart Delay es una herramienta de diseño de conversaciones que te da control total sobre el momento exacto en que se entrega cada mensaje del chatbot. A diferencia de los retrasos básicos limitados a 60 segundos, el Smart Delay extiende el control hasta 24 horas completas.
+
+### Por Qué es Importante la Ventana de 24 Horas
+
+- **Re-engagement crítico**: Fundamental para plataformas como WhatsApp donde los seguimientos oportunos son clave
+- **Nutrición estratégica**: Permite secuencias multi-etapa que se despliegan durante un día completo
+- **Recuperación de carritos**: Atrapa al usuario cuando su intención de compra aún está alta (15 min - 3 horas después del abandono)
+
+## Precisiones del Temporizador
+
+| Unidad | Rango | Ejemplo de uso |
+|--------|-------|---------------|
+| **Segundos** | 0 - 59 | Simular tipeo humano (1-5 seg) |
+| **Minutos** | 0 - 59 | Seguimiento post-abandono (15 min) |
+| **Horas** | 0 - 24 | Recordatorio de evento (4-8 horas antes) |
+
+## Cómo Configurar el Smart Delay
+
+<Steps>
+  <Step title="Abre el editor de flujo">
+    En E-SMART360, ve a **Bot Manager** y selecciona el bot o flujo donde quieras agregar un retraso.
+  </Step>
+  <Step title="Busca la sección de retraso">
+    En cualquier bloque de mensaje (texto, interactivo o botón), busca la sección **"Delay"** o **"Temporizador"**.
+  </Step>
+  <Step title="Configura el tiempo">
+    Usa los controles deslizantes o campos de entrada para establecer:
+    - **Horas**: 0-24
+    - **Minutos**: 0-59
+    - **Segundos**: 0-59
+  </Step>
+  <Step title="Guarda el flujo">
+    Confirma los cambios. El bot ahora esperará el tiempo configurado antes de enviar el siguiente mensaje.
+  </Step>
+</Steps>
+
+## Casos de Uso Estratégicos
+
+### Engagement y Nutrición
+
+- **Ritmo humano**: Retrasos de 1-5 segundos simulan que una persona real está escribiendo
+- **Educación estructurada**: Entrega lecciones o tips con intervalos estratégicos
+- **Secuencias de bienvenida**: Espacia los mensajes de onboarding durante el primer día
+
+### Conversión y Recuperación
+
+<Columns>
+  <Card title="🛒 Carrito Abandonado">
+    Programa recordatorios a los:
+    - 15 minutos: "Olvidaste algo?"
+    - 3 horas: "Tu carrito te espera"
+    - 24 horas: "Última oportunidad con descuento"
+  </Card>
+  <Card title="📝 Formularios Incompletos">
+    Si el usuario dejó un formulario a medias, espera 15 min y envía un recordatorio amigable.
+  </Card>
+  <Card title="🎁 Lead Magnets">
+    Si el usuario descargó un recurso pero no completó el registro, haz seguimiento a la hora.
+  </Card>
+</Columns>
+
+### Servicio y Logística
+
+- **Recordatorios de eventos**: Confirmación inmediata + recordatorio 4-8 horas antes
+- **Encuestas post-interacción**: 12-24 horas después del servicio o compra
+- **Actualizaciones de pedidos**: Espaciar notificaciones de envío de forma natural
+
+## Integración con Lógica Condicional
+
+El Smart Delay funciona mejor cuando se combina con bloques de condición para evitar spam.
+
+**Ejemplo práctico:**
+
+```
+Usuario hace clic en "Ver más" → 
+  [Condición: ¿Ya tiene tag #Comprado?] →
+    Sí → No enviar seguimiento
+    No → Smart Delay 30 min → Enviar oferta especial
+```
+
+Esto garantiza que solo recibas seguimiento quienes realmente lo necesitan.
+
+<Callout kind="warning">
+  **Precaución**: El uso excesivo de retrasos o mensajes puede afectar tu **calificación de calidad** en WhatsApp. Usa el Smart Delay con moderación y siempre con contenido de valor.
+</Callout>
+
+## Mejores Prácticas
+
+| Escenario | Delay recomendado | Razón |
+|-----------|------------------|-------|
+| Respuesta inicial | 0-2 seg | Respuesta inmediata genera confianza |
+| Seguimiento post-respuesta | 3-5 seg | Simula que el bot "leyó" y procesó |
+| Recordatorio de carrito | 15-30 min | Captura intención de compra aún activa |
+| Oferta especial | 3-6 horas | No saturar al usuario |
+| Encuesta post-servicio | 12-24 horas | Tiempo suficiente para experimentar el producto |
+| Re-engagement semanal | 24 horas (máximo) | Respetar el tiempo del usuario |
+
+## Próximos Pasos
+
+- [Configurar respuestas fuera de horario](/03-automatizacion/19-respuestas-fuera-horario)
+- [Crear secuencias de ventas automatizadas](/04-marketing/12-secuencias-messenger)
+- [Integrar lógica condicional en tus flujos](/03-automatizacion/01-flow-builder-intro)

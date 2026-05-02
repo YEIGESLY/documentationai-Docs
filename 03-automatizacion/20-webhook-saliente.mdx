@@ -1,0 +1,166 @@
+---
+title: "Webhooks Salientes: Enviar Datos del Chatbot a Plataformas Externas"
+description: "Aprende a enviar datos de conversaciones de WhatsApp a CRMs, hojas de cálculo y otras plataformas mediante webhooks salientes."
+---
+
+<Callout kind="info">
+  Los webhooks salientes permiten que tu chatbot de WhatsApp envíe datos automáticamente a plataformas externas como CRMs, Google Sheets, Make.com, Zapier o sistemas propios para centralizar la información de tus leads.
+</Callout>
+
+## ¿Qué es un Webhook Saliente?
+
+Un webhook saliente (outbound webhook) es una URL a la que tu chatbot envía datos automáticamente cuando ocurre un evento específico. Es como un "mensajero digital" que lleva la información del chatbot a otras aplicaciones.
+
+### ¿Para Qué Sirve?
+
+<Columns>
+  <Card title="📊 CRM">
+    Crea contactos automáticamente en HubSpot, Salesforce, o cualquier CRM cuando alguien escribe a tu WhatsApp.
+  </Card>
+  <Card title="📋 Google Sheets">
+    Registra cada conversación en una hoja de cálculo para análisis y reportes.
+  </Card>
+  <Card title="🔌 Make.com / Zapier">
+    Dispara escenarios complejos: enviar emails, crear tickets, actualizar bases de datos.
+  </Card>
+  <Card title="🏗️ Sistema Propio">
+    Integra con tu API interna para sincronizar datos de clientes en tiempo real.
+  </Card>
+</Columns>
+
+## Tipos de Datos que Puedes Enviar
+
+| Dato | Descripción | Uso típico |
+|------|-------------|------------|
+| **Nombre del contacto** | Nombre del usuario | Crear perfil en CRM |
+| **Número de teléfono** | WhatsApp ID del usuario | Identificador único |
+| **Mensaje** | Texto completo del mensaje | Análisis de conversaciones |
+| **Fecha/Hora** | Cuándo ocurrió la conversación | Métricas y reportes |
+| **Etiquetas** | Tags asignados al contacto | Segmentación |
+| **Bot activado** | Qué flujo se ejecutó | Optimización de chatbot |
+| **Respuesta del bot** | Lo que el bot respondió | Auditoría de calidad |
+
+## Cómo Configurar un Webhook Saliente
+
+<Steps>
+  <Step title="Accede a la configuración de webhooks">
+    En E-SMART360, ve a **Configuración > Integraciones > Webhooks** o **APIs and Webhooks**.
+  </Step>
+  <Step title="Crea un nuevo webhook">
+    Haz clic en **"Nuevo webhook saliente"** o **"Create Outbound Webhook"**.
+  </Step>
+  <Step title="Configura los parámetros esenciales">
+    - **URL del endpoint**: La dirección donde se enviarán los datos (ej: tu API de CRM)
+    - **Método HTTP**: Generalmente POST o PUT
+    - **Headers**: Configura autenticación (Bearer token, API key, etc.)
+    - **Content-Type**: application/json (recomendado)
+  </Step>
+  <Step title="Selecciona los datos a enviar">
+    Elige qué campos del contacto y la conversación enviar. Generalmente puedes mapear:
+    
+    ```
+    {
+      "name": "{{contact_name}}",
+      "phone": "{{contact_phone}}",
+      "message": "{{message_text}}",
+      "timestamp": "{{message_timestamp}}",
+      "tags": "{{contact_tags}}",
+      "bot_name": "{{matched_bot}}",
+      "bot_response": "{{bot_reply}}"
+    }
+    ```
+  </Step>
+  <Step title="Prueba la conexión">
+    E-SMART360 ofrece un botón **"Probar conexión"** o **"Test"**. Envía un webhook de prueba y verifica que tu sistema externo reciba los datos correctamente.
+  </Step>
+  <Step title="Guarda y activa">
+    Una vez que la prueba sea exitosa, guarda el webhook. Dependiendo de la configuración, puede activarse para:
+    - **Todas las conversaciones**: Cada mensaje entrante/saliente
+    - **Eventos específicos**: Solo cuando se active un bot en particular
+    - **Condiciones**: Solo cuando se cumplan ciertos criterios
+  </Step>
+</Steps>
+
+## Configuración Avanzada
+
+### Filtros por Eventos
+
+Puedes configurar que el webhook solo se dispare en eventos específicos:
+
+<Tabs>
+  <Tab label="Nuevo contacto">
+    Se envía solo cuando un usuario escribe por primera vez. Ideal para CRMs.
+  </Tab>
+  <Tab label="Keyword específica">
+    Se activa solo cuando el usuario escribe ciertas palabras (ej: "comprar", "precio"). Ideal para leads calificados.
+  </Tab>
+  <Tab label="Compra confirmada">
+    Se activa tras una transacción. Ideal para sincronizar pedidos.
+  </Tab>
+  <Tab label="Respuesta del bot">
+    Se activa cada vez que el bot responde. Ideal para auditoría.
+  </Tab>
+</Tabs>
+
+### Mapeo de Datos Personalizado
+
+Para sistemas que requieren nombres de campo específicos:
+
+```
+// Ejemplo para HubSpot CRM
+{
+  "properties": [
+    {
+      "property": "firstname",
+      "value": "{{contact_name}}"
+    },
+    {
+      "property": "phone",
+      "value": "{{contact_phone}}"
+    },
+    {
+      "property": "whatsapp_lead_source",
+      "value": "Chatbot E-SMART360"
+    }
+  ]
+}
+```
+
+<Callout kind="warning">
+  **Consideraciones de seguridad**:
+  - Nunca envíes datos sensibles (contraseñas, información bancaria) por webhook sin cifrado
+  - Usa siempre **HTTPS** en la URL del endpoint
+  - Implementa autenticación (API key o token) en tu endpoint receptor
+  - Verifica los límites de tasa para no saturar tu sistema externo
+</Callout>
+
+## Integraciones Populares
+
+| Plataforma | Caso de uso | Método |
+|------------|-------------|--------|
+| **HubSpot** | Crear contacto + deal | API de HubSpot via webhook |
+| **Salesforce** | Registrar lead | REST API |
+| **Google Sheets** | Bitácora de conversaciones | Make.com / Zapier como intermediario |
+| **Notion** | Base de datos de leads | Notion API |
+| **Slack** | Notificar al equipo | Slack Webhook |
+| **Make.com** | Escenario complejo multi-paso | Webhook de Make |
+
+## Solución de Problemas
+
+| Problema | Causa | Solución |
+|----------|-------|----------|
+| El webhook no se envía | URL inválida o fuera de servicio | Verifica que el endpoint esté activo |
+| Error 401/403 | Autenticación incorrecta | Revisa el token o API key |
+| Datos incompletos | Mapeo incorrecto de variables | Verifica los nombres de campo |
+| Límite de tasa excedido | Demasiadas solicitudes | Implementa rate limiting o batching |
+| Timeout | El endpoint tarda en responder | Optimiza tu endpoint receptor |
+
+<Callout kind="tip">
+  **Recomendación**: Usa Make.com o Zapier como intermediario. Así puedes reenviar los datos a múltiples destinos sin configurar webhooks individuales para cada uno.
+</Callout>
+
+## Próximos Pasos
+
+- [Integrar con Elementor Forms](/07-integraciones/15-elementor-forms)
+- [Conectar con Make.com](/07-integraciones/01-google-sheets-importar)
+- [Automatizar la gestión de leads en tu CRM](/04-marketing/12-secuencias-messenger)

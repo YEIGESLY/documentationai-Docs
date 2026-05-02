@@ -1,0 +1,14 @@
+---
+title: "Flujo Carrito de Compra"
+description: "Guía al cliente desde selección hasta compra."
+---
+
+<Callout kind="info">Flujo completo de carrito de compras automatizado.</Callout>
+```mermaid
+flowchart LR
+    A[Inicio]-->B{Menú}
+    B-->C[Catálogo]-->D[Selecciona]-->E[Carrito]
+    B-->F[Buscar]-->D
+    E-->G{¿Seguir?}-->|Sí|B
+    G-->|No|H[Confirmar]-->I[Pago]-->J[Listo]
+```

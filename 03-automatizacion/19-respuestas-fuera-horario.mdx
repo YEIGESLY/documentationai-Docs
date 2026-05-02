@@ -1,0 +1,123 @@
+---
+title: "Respuestas Fuera de Horario y No Match"
+description: "Configura respuestas automáticas cuando tu chatbot no puede identificar el mensaje del usuario o está fuera del horario laboral."
+---
+
+<Callout kind="info">
+  Un buen chatbot debe saber responder incluso cuando no entiende el mensaje. Las respuestas "No Match" y los mensajes fuera de horario aseguran que ningún cliente se quede sin atención.
+</Callout>
+
+## ¿Qué es una Respuesta No Match?
+
+Una respuesta **No Match** es lo que el chatbot envía cuando el mensaje del usuario no coincide con ninguna keyword o regla configurada en tus bots. En lugar de dejar el mensaje sin respuesta, ofreces una salida amigable.
+
+### Tipos de Respuesta No Match
+
+| Tipo | Descripción | Ejemplo |
+|------|-------------|---------|
+| **Sugerencia de acción** | Guía al usuario a una opción válida | "No entendí tu mensaje. ¿Quieres ver nuestro menú?" |
+| **Enlace informativo** | Ofrece un recurso | "Visita nuestra web para más información: link" |
+| **Derivación a humano** | Transfiere a un agente | "Te conecto con un asesor humano" |
+
+## Configurar No Match
+
+<Steps>
+  <Step title="Accede al Bot Manager">
+    En E-SMART360, ve a **WhatsApp > Bot Manager**.
+  </Step>
+  <Step title="Selecciona Actions">
+    Haz clic en **"Actions"** o **"Bot Actions"**.
+  </Step>
+  <Step title="Edita el No Match Reply">
+    Selecciona la opción **"No Match Reply Template"**. Se abrirá el editor visual de flujo.
+  </Step>
+  <Step title="Diseña la respuesta">
+    Crea un mensaje útil que:
+    - Reconozca que no entendió: "Disculpa, no logré entender tu mensaje"
+    - Ofrezca opciones claras: "¿Quieres intentar de nuevo, ver nuestro catálogo o hablar con un asesor?"
+    - Sea amigable: Usa emojis y tono cordial
+  </Step>
+  <Step title="Guarda los cambios">
+    Confirma y guarda. El bot ahora responderá automáticamente a mensajes que no coincidan.
+  </Step>
+</Steps>
+
+## Frecuencia de No Match
+
+Es importante controlar la frecuencia para evitar spam si el usuario insiste en mensajes no reconocidos.
+
+| Opción | Cuándo usarla |
+|--------|--------------|
+| **Responder siempre** | Cuando quieres que cada mensaje tenga respuesta (ideal para soporte) |
+| **Una vez al día** | Cuando quieres evitar repetir la misma respuesta a un usuario que insiste |
+
+### Cómo Configurarlo
+
+1. En **Bot Manager**, ve a **"Configuration"**
+2. Busca **"No Match Reply"** 
+3. Activa la opción
+4. Selecciona la frecuencia: **Every Time** o **Once a Day**
+5. Guarda la configuración
+
+<Callout kind="tip">
+  **Recomendación**: Usa "Una vez al día" si tu chatbot está expuesto a mucho tráfico. Usa "Siempre" si tu prioridad es la atención al cliente.
+</Callout>
+
+## Respuestas Fuera de Horario
+
+Cuando tu negocio cierra, el chatbot debe seguir funcionando pero con un mensaje adecuado.
+
+### Estrategia de Horarios
+
+<Tabs>
+  <Tab label="Modo 24/7">
+    El chatbot responde todo el día, todos los días. Los mensajes urgentes pueden escalarse a un agente en horario laboral.
+  </Tab>
+  <Tab label="Modo Horario Laboral">
+    El chatbot responde solo en horario laboral. Fuera de horario, envía un mensaje personalizado:
+    
+    "Gracias por contactarnos 🕐 Nuestro horario es Lunes a Viernes de 9:00 a 18:00 hrs. Te responderemos en cuanto abramos. ¡Que tengas un excelente día! 🌟"
+  </Tab>
+  <Tab label="Modo Híbrido">
+    El chatbot responde preguntas frecuentes 24/7, pero los mensajes que requieren atención humana se almacenan para responder en el próximo horario laboral.
+  </Tab>
+</Tabs>
+
+### Cómo Configurar Horarios en E-SMART360
+
+1. Ve a **Configuración > Horario de atención**
+2. Define los días y horas laborales
+3. Configura el mensaje para fuera de horario
+4. Opcional: configura días festivos sin atención
+
+## Ejemplo de Flujo Completo
+
+```
+Usuario: "asdfgh" (mensaje no reconocido)
+  → No Match: "Disculpa, no entendí. Opciones: 
+     1️⃣ Ver catálogo
+     2️⃣ Hablar con asesor
+     3️⃣ Escribir de nuevo"
+Usuario: "3"
+  → Bot: "Por favor escribe tu pregunta 📝"
+Usuario: "¿Cuánto cuesta el plan básico?"
+  → Bot con keyword "precio" o "plan básico" responde
+```
+
+<Callout kind="info">
+  **Dato**: Un buen No Match Reply puede reducir hasta un 40% las conversaciones perdidas. Es tu red de seguridad cuando el chatbot no tiene una respuesta preparada.
+</Callout>
+
+## Mejores Prácticas
+
+- **Sé honesto**: No finjas entender. Di "No logré entender tu mensaje"
+- **Ofrece una salida**: Siempre da opciones al usuario
+- **Deriva a humano**: Si después de 2-3 intentos el usuario no encuentra lo que busca
+- **Mantén el tono de marca**: Las respuestas No Match también deben sonar como tu negocio
+- **Analiza los No Match**: Los mensajes que no coinciden son una mina de oro para identificar qué preguntas frecuentes te faltan por automatizar
+
+## Próximos Pasos
+
+- [Analizar mensajes No Match para mejorar tu bot](/03-automatizacion/09-keywords-bot)
+- [Configurar la programación inteligente de respuestas](/03-automatizacion/18-programacion-inteligente)
+- [Agregar más keywords y flujos a tu chatbot](/03-automatizacion/01-flow-builder-intro)
