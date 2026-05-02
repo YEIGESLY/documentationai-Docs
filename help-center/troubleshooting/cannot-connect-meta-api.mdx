@@ -1,0 +1,24 @@
+---
+title: No puedo conectar con la API de Meta
+description: Solución rápida para problemas de conexión con Meta.
+---
+
+## Síntomas
+- Error: "No se pudo conectar a Meta API"
+- Solicitudes fallidas o sin respuesta
+
+## Causas
+- Token API inválido
+- Problemas de red o firewall
+
+## Solución
+<Steps>
+  <Step title="Verifica tu token API">
+    ````bash
+    curl -I -H "Authorization: Bearer TU_API_TOKEN" https://api.esmart360.com/health
+    ````
+  </Step>
+  <Step title="Revisa tu conexión">
+    Asegúrate de que tu servidor permite acceso saliente a api.esmart360.com.
+  </Step>
+</Steps>

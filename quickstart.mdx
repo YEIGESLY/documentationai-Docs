@@ -1,0 +1,152 @@
+---
+title: Getting Started with E-Smart360
+description: Learn how to set up your account, access the dashboard, and configure your first omnichannel setup in just a few minutes.
+---
+
+## Prerequisites
+
+Before starting, ensure you have:
+
+<Callout kind="info">
+
+- A Meta Business account with admin access
+- Access to your Facebook Page or Instagram account for channel connection
+- A modern web browser (Chrome, Firefox, or Safari recommended)
+
+</Callout>
+
+Review these requirements to avoid setup issues.
+
+## Create Your Account and Log In
+
+Sign up for E-Smart360 in minutes to access the dashboard.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Visit `https://dashboard.example.com/signup` and enter your email, password, and business name.
+    
+    Verify your email via the confirmation link sent to your inbox.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Navigate to `https://dashboard.example.com/login`.
+    
+    Enter your credentials to access the dashboard.
+  </Step>
+  <Step title="Complete Profile" icon="settings">
+    Fill in your business details, including time zone and preferred language.
+    
+    Enable two-factor authentication for security.
+  </Step>
+</Steps>
+
+## Dashboard Overview
+
+The E-Smart360 dashboard provides a central hub for managing your omnichannel AI agents.
+
+<Columns cols={3}>
+  <Card title="Channels" icon="message-circle" href="/configuration">
+    Connect and monitor Meta channels like Facebook Messenger and Instagram.
+  </Card>
+  <Card title="AI Chats" icon="bot" href="/guides">
+    Configure conversational AI for customer interactions.
+  </Card>
+  <Card title="Analytics" icon="bar-chart-3" href="/analytics">
+    Track performance metrics and sales conversions.
+  </Card>
+</Columns>
+
+Use the left sidebar for quick navigation and the top bar for account settings.
+
+## Connect Your First Meta Channel
+
+Link your Meta accounts to enable omnichannel messaging.
+
+<Tabs>
+  <Tab title="Facebook Messenger" icon="facebook">
+    <Steps>
+      <Step title="Authorize App" icon="key">
+        In the dashboard, go to Channels > Add Channel > Facebook Messenger.
+        
+        Click "Connect" and log in to your Meta Business account.
+      </Step>
+      <Step title="Select Page" icon="globe">
+        Choose your Facebook Page from the list.
+        
+        Grant permissions for messaging and pages access.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Instagram" icon="instagram">
+    <Steps>
+      <Step title="Link Account" icon="link">
+        Select Instagram in Channels and authorize via Meta login.
+      </Step>
+      <Step title="Verify" icon="check-circle">
+        Confirm the connection status shows as active.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Test the connection by sending a message to your channel. It appears in the E-Smart360 inbox within seconds.
+</Callout>
+
+## Activate Basic AI Chat
+
+Enable AI-powered responses for incoming messages.
+
+<CodeGroup tabs="JavaScript,Python">
+  ````javascript
+  // Example: Send initial setup webhook to E-Smart360
+  const webhookData = {
+    channel: "messenger",
+    aiPrompt: "Greet users and offer product demo",
+    enabled: true
+  };
+
+  fetch("https://api.example.com/v1/ai-chat/activate", {
+    method: "POST",
+    headers: { "Authorization": "Bearer YOUR_API_KEY", "Content-Type": "application/json" },
+    body: JSON.stringify(webhookData)
+  })
+    .then(response => response.json())
+    .then(data => console.log("AI Chat activated:", data));
+  ````
+  ````python
+  import requests
+
+  webhook_data = {
+      "channel": "messenger",
+      "ai_prompt": "Greet users and offer product demo",
+      "enabled": True
+  }
+
+  response = requests.post(
+      "https://api.example.com/v1/ai-chat/activate",
+      headers={
+          "Authorization": "Bearer YOUR_API_KEY",
+          "Content-Type": "application/json"
+      },
+      json=webhook_data
+  )
+  print("AI Chat activated:", response.json())
+  ````
+</CodeGroup>
+
+Replace `YOUR_API_KEY` with your generated key from the dashboard (Settings > API Keys).
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Authentication" icon="shield" href="/authentication" horizontal>
+    Secure your integrations with API keys and webhooks.
+  </Card>
+  <Card title="Advanced Configuration" icon="settings" href="/configuration" horizontal>
+    Customize AI prompts and voice agents.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+  Congratulations! Your first omnichannel setup is live. Monitor conversations in the dashboard and scale as needed.
+</Callout>

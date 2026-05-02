@@ -1,0 +1,121 @@
+---
+title: Changelog
+description: Review the version history of E-Smart360, including recent updates, new features, and improvements to keep your implementation current.
+---
+
+## Recent Updates
+
+Stay current with the latest enhancements in E-Smart360. These updates include new AI capabilities, Meta API integrations, and performance optimizations.
+
+<Update label="2024-10-15" description="v1.3.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added omnicanal AI voice agents for 24/7 receptionist functionality.
+- Introduced DigitalCard integration for seamless customer interactions.
+
+## Improvements
+
+- Enhanced Meta API official integration for better campaign management.
+- Optimized conversational AI processes for faster response times.
+
+## Bug Fixes
+
+- Fixed intermittent webhook failures during high-volume chats.
+- Resolved configuration issues with multi-account management.
+
+</Update>
+
+<Update label="2024-09-25" description="v1.2.1" tags={["bugfix", "security"]}>
+
+## Bug Fixes
+
+- Patched security vulnerabilities in chat IA platform endpoints.
+- Corrected errors in voice IA agent transcription accuracy.
+
+## Improvements
+
+- Improved 24/7 support integration with voice, chat, and video channels.
+
+</Update>
+
+<Update label="2024-09-10" description="v1.2.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Launched IA omnicanal platform with Meta Business Partner certification.
+- Added real-time process capture and digital ecosystem builder.
+
+## Breaking Changes
+
+- Updated API authentication to require new `{API_KEY}` format. Migrate your tokens.
+
+## Improvements
+
+- Boosted sales automation with conversational AI for critical operations.
+
+</Update>
+
+## Upgrade Process
+
+Follow these steps to update your E-Smart360 implementation safely.
+
+<Steps>
+  <Step title="Check Compatibility" icon="check-circle">
+
+    Review your current version and changelog for breaking changes.
+
+    <Callout kind="alert">
+      Backup your configuration before proceeding.
+    </Callout>
+
+  </Step>
+  <Step title="Update Package" icon="download">
+
+    Use your package manager to install the latest version.
+
+    <CodeGroup tabs="npm,yarn">
+      ````bash
+      npm install e-smart360@latest
+      ````
+
+      ````bash
+      yarn add e-smart360@latest
+      ````
+    </CodeGroup>
+
+  </Step>
+  <Step title="Reconfigure" icon="settings">
+
+    Update your API endpoint to `https://api.example.com/v1` and regenerate keys.
+
+    <ParamField path="api_key" param-type="string" required="true">
+      Your new E-Smart360 `{API_KEY}`.
+    </ParamField>
+
+    <ParamField header="Authorization" param-type="string" required="true">
+      Bearer `{YOUR_TOKEN}`.
+    </ParamField>
+
+  </Step>
+  <Step title="Test Integration" icon="zap">
+
+    Verify Meta API connections and AI chat flows.
+
+  </Step>
+</Steps>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="book-open" href="/quickstart">
+    Get started or refresh your setup.
+  </Card>
+  <Card title="API Reference" icon="code" href="/authentication">
+    Explore endpoints and authentication.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+  Subscribe to our newsletter or check the [E-Smart360 dashboard](https://dashboard.example.com) for notifications on future releases.
+</Callout>

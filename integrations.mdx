@@ -1,0 +1,211 @@
+---
+title: Integrations and API Connections
+description: Connect E-Smart360 with Meta's ecosystem and other services to enable seamless omnichannel communication and data flow.
+---
+
+## Overview
+
+E-Smart360 integrates seamlessly with Meta's official APIs to power omnichannel communications across WhatsApp Business, Facebook Messenger, and more. You can authenticate with Meta's Graph API, set up webhooks for real-time events, and sync data effortlessly.
+
+<Columns cols={2}>
+  <Card title="WhatsApp Business API" icon="message-circle" href="#whatsapp-integration">
+    Send and receive messages programmatically with official Meta WhatsApp integration.
+  </Card>
+  <Card title="Facebook Messenger" icon="facebook" href="#messenger-integration">
+    Enable conversational AI on Messenger using Meta's API.
+  </Card>
+  <Card title="Webhooks" icon="zap" href="#webhooks-setup">
+    Receive real-time notifications for incoming messages and events.
+  </Card>
+  <Card title="Meta Authentication" icon="shield" href="#meta-auth">
+    Securely authenticate with Meta's Graph API using access tokens.
+  </Card>
+</Columns>
+
+## Prerequisites
+
+Before integrating, ensure you have:
+
+<Callout kind="info">
+  - A Meta Developer account at `https://developers.facebook.com`
+  - An approved WhatsApp Business App or Messenger app
+  - Your Meta App ID, App Secret, and Access Token (`YOUR_ACCESS_TOKEN`)
+  - E-Smart360 API key from your dashboard at `https://dashboard.example.com`
+</Callout>
+
+## Official Meta API Authentication
+
+Set up authentication with Meta's Graph API to access WhatsApp and Messenger endpoints.
+
+<Steps>
+  <Step title="Create Meta App" icon="settings">
+    Log in to `https://developers.facebook.com/apps` and create a new app. Select "Business" type.
+  </Step>
+  <Step title="Generate Access Token" icon="key">
+    Navigate to Graph API Explorer. Select your app and generate a `pages_messaging` or `whatsapp_business_messaging` token.
+  </Step>
+  <Step title="Verify Token in E-Smart360" icon="check-circle">
+    In your E-Smart360 dashboard, add the token under Integrations > Meta.
+  </Step>
+</Steps>
+
+Use these parameters for authentication:
+
+<ParamField header="Authorization" param-type="string" required="true">
+  Bearer `{YOUR_ACCESS_TOKEN}`
+</ParamField>
+
+<ParamField query="app_id" param-type="string" required="true">
+  Your Meta App ID.
+</ParamField>
+
+## Integrating WhatsApp Business API
+
+Connect E-Smart360 to WhatsApp Business API for automated messaging.
+
+### Send a Message
+
+<CodeGroup tabs="Node.js,Python">
+  ```javascript
+  const axios = require('axios');
+
+  const response = await axios.post(
+    'https://graph.facebook.com/v18.0/{PHONE_NUMBER_ID}/messages',
+    {
+      messaging_product: 'whatsapp',
+      to: 'whatsapp:+1234567890',
+      text: { body: 'Hello from E-Smart360!' }
+    },
+    {
+      headers: {
+        Authorization: `Bearer ${YOUR_ACCESS_TOKEN}`,
+        'Content-Type': 'application/json'
+      }
+    }
+  );
+  ```
+  ```python
+  import requests
+
+  response = requests.post(
+      'https://graph.facebook.com/v18.0/{PHONE_NUMBER_ID}/messages',
+      json={
+          'messaging_product': 'whatsapp',
+          'to': 'whatsapp:+1234567890',
+          'text': {'body': 'Hello from E-Smart360!'}
+      },
+      headers={
+          'Authorization': f'Bearer {YOUR_ACCESS_TOKEN}',
+          'Content-Type': 'application/json'
+      }
+  )
+  ```
+</CodeGroup>
+
+<Callout kind="tip">
+  Replace `{PHONE_NUMBER_ID}` with your WhatsApp Business phone number ID from Meta dashboard.
+</Callout>
+
+## Connecting Facebook Messenger
+
+Enable Messenger integration for Facebook pages.
+
+<Tabs>
+  <Tab title="Setup" icon="settings">
+    <Steps>
+      <Step title="Add Page Access" icon="facebook">
+        In Meta App settings, add your Facebook Page and generate `pages_messaging` permission token.
+      </Step>
+      <Step title="Configure in E-Smart360" icon="link">
+        Paste the token and Page ID in E-Smart360 Integrations > Messenger.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="API Example" icon="code">
+    <Request tabs="cURL,JavaScript" show-lines="true">
+      ```bash
+      curl -X POST \
+        'https://graph.facebook.com/v18.0/{PAGE_ID}/messages' \
+        -H 'Authorization: Bearer {YOUR_ACCESS_TOKEN}' \
+        -H 'Content-Type: application/json' \
+        -d '{
+          "recipient": {"id": "{USER_PSID}"},
+          "message": {"text": "Hi from E-Smart360!"}
+        }'
+      ```
+      ```javascript
+      await fetch(`https://graph.facebook.com/v18.0/${PAGE_ID}/messages`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${YOUR_ACCESS_TOKEN}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          recipient: { id: USER_PSID },
+          message: { text: 'Hi from E-Smart360!' }
+        })
+      });
+      ```
+    </Request>
+  </Tab>
+</Tabs>
+
+## Setting up Webhooks for Real-Time Notifications
+
+Webhooks notify E-Smart360 of incoming messages instantly.
+
+<Steps>
+  <Step title="Configure Webhook URL" icon="globe">
+    In Meta App > WhatsApp/Messenger > Webhooks, set callback URL to `https://your-webhook-url.com/webhook`.
+  </Step>
+  <Step title="Subscribe to Fields" icon="bell">
+    Subscribe to `messages` field. Verify with Meta's challenge.
+  </Step>
+  <Step title="Handle Payload in E-Smart360" icon="code">
+    Process incoming payloads with your webhook endpoint.
+  </Step>
+</Steps>
+
+Example webhook payload:
+
+<Response tabs="Success,Error">
+  ```json
+  {
+    "entry": [{
+      "changes": [{
+        "value": {
+          "messages": [{
+            "from": "whatsapp:+1234567890",
+            "text": { "body": "User message" }
+          }]
+        }
+      }]
+    }]
+  }
+  ```
+  ```json
+  {
+    "error": {
+      "message": "Invalid verification token",
+      "type": "OAuthException"
+    }
+  }
+  ```
+</Response>
+
+<Callout kind="alert">
+  Secure your webhook with Meta's `X-Hub-Signature-256` header verification.
+</Callout>
+
+## Next Steps
+
+Explore advanced features:
+
+<Columns cols={2}>
+  <Card title="Custom Workflows" icon="zap" href="/workflows">
+    Build AI-powered message flows.
+  </Card>
+  <Card title="Analytics" icon="bar-chart-3" href="/analytics">
+    Track integration performance.
+  </Card>
+</Columns>

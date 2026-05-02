@@ -1,0 +1,22 @@
+---
+title: ¿Cómo autentico mi cuenta en E-Smart360?
+description: Guía breve para autenticarte en E-Smart360.
+---
+
+## Resumen
+
+Toda solicitud requiere un token API válido en el header Authorization.
+
+## Obtener tu token
+
+1. Inicia sesión en https://dashboard.esmart360.com
+2. Ve a "API Keys"
+3. Pulsa en "Generar clave"
+4. Guarda el token de forma segura
+
+## Uso
+
+````bash
+curl -H "Authorization: Bearer TU_API_TOKEN" \
+  https://api.esmart360.com/v1/contactos
+````

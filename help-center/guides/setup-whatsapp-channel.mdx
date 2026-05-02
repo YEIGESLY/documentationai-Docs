@@ -1,0 +1,24 @@
+---
+title: Configurar el canal de WhatsApp
+description: Guía rápida para integrar WhatsApp con E-Smart360.
+---
+
+## Introducción
+E-Smart360 permite manejar WhatsApp desde un solo panel.
+
+## Pasos
+<Steps>
+  <Step title="Obtén tu token de Meta">
+    Accede a https://developers.facebook.com y copia tu access token del canal WhatsApp.
+  </Step>
+  <Step title="Registra tu canal en E-Smart360">
+    ````bash
+    curl -X POST https://api.esmart360.com/v1/channels \
+      -H "Authorization: Bearer TU_API_TOKEN" \
+      -d '{"type": "whatsapp", "meta_token": "TOKEN_DE_META"}'
+    ````
+  </Step>
+  <Step title="Verifica estado">
+    Ingresa a "Canales" en el dashboard y comprueba que esté "Activo".
+  </Step>
+</Steps>
