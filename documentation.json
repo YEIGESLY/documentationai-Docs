@@ -19,11 +19,6 @@
             "icon": "home",
             "pages": [
               {
-                "group": "Recursos",
-                "pages": [],
-                "icon": "folder-archive"
-              },
-              {
                 "group": "Panorama General",
                 "pages": [
                   {
@@ -463,52 +458,52 @@
                   }
                 ],
                 "icon": "lucide-shield-user"
-              }
-            ]
-          },
-          {
-            "group": "Recursos",
-            "icon": "folder",
-            "pages": [
-              {
-                "title": "FAQ General",
-                "path": "10-recursos/01-faq-general"
               },
               {
-                "title": "FAQ Legal",
-                "path": "10-recursos/02-faq-legal"
-              },
-              {
-                "title": "Códigos de Error",
-                "path": "10-recursos/03-codigos-error"
-              },
-              {
-                "title": "Changelog",
-                "path": "10-recursos/04-changelog"
-              },
-              {
-                "title": "Pricing y Planes",
-                "path": "10-recursos/05-pricing-planes"
-              },
-              {
-                "title": "Ciclo de Billing",
-                "path": "10-recursos/06-billing-ciclo"
-              },
-              {
-                "title": "Cancelar Suscripción",
-                "path": "10-recursos/07-cancelar-suscripcion"
-              },
-              {
-                "title": "Soporte y Contacto",
-                "path": "10-recursos/08-soporte-contacto"
-              },
-              {
-                "title": "Migrar Número",
-                "path": "10-recursos/09-migrar-numero"
-              },
-              {
-                "title": "Glosario",
-                "path": "10-recursos/10-glosario"
+                "group": "Recursos",
+                "pages": [
+                  {
+                    "title": "FAQ General",
+                    "path": "10-recursos/01-faq-general"
+                  },
+                  {
+                    "title": "FAQ Legal",
+                    "path": "10-recursos/02-faq-legal"
+                  },
+                  {
+                    "title": "Códigos de Error",
+                    "path": "10-recursos/03-codigos-error"
+                  },
+                  {
+                    "title": "Changelog",
+                    "path": "10-recursos/04-changelog"
+                  },
+                  {
+                    "title": "Pricing y Planes",
+                    "path": "10-recursos/05-pricing-planes"
+                  },
+                  {
+                    "title": "Ciclo de Billing",
+                    "path": "10-recursos/06-billing-ciclo"
+                  },
+                  {
+                    "title": "Cancelar Suscripción",
+                    "path": "10-recursos/07-cancelar-suscripcion"
+                  },
+                  {
+                    "title": "Soporte y Contacto",
+                    "path": "10-recursos/08-soporte-contacto"
+                  },
+                  {
+                    "title": "Migrar Número",
+                    "path": "10-recursos/09-migrar-numero"
+                  },
+                  {
+                    "title": "Glosario",
+                    "path": "10-recursos/10-glosario"
+                  }
+                ],
+                "icon": "folder-archive"
               }
             ]
           }
