@@ -180,60 +180,60 @@
                   }
                 ],
                 "icon": "bot-message-square"
-              }
-            ]
-          },
-          {
-            "group": "Marketing",
-            "icon": "megaphone",
-            "pages": [
-              {
-                "title": "Broadcasting Masivo",
-                "path": "04-marketing/01-broadcasting-masivo"
               },
               {
-                "title": "Plantillas Meta",
-                "path": "04-marketing/02-plantillas-meta"
-              },
-              {
-                "title": "Crear Plantillas",
-                "path": "04-marketing/03-crear-plantillas"
-              },
-              {
-                "title": "Sincronizar Plantillas",
-                "path": "04-marketing/04-sincronizar-plantillas"
-              },
-              {
-                "title": "Broadcasting Multimedia",
-                "path": "04-marketing/05-broadcasting-multimedia"
-              },
-              {
-                "title": "Broadcasting Personalizado",
-                "path": "04-marketing/06-broadcasting-personalizado"
-              },
-              {
-                "title": "Secuencias de Ventas",
-                "path": "04-marketing/07-secuencias-ventas"
-              },
-              {
-                "title": "Follow Up Automático",
-                "path": "04-marketing/08-follow-up-automatico"
-              },
-              {
-                "title": "Gestión de Suscripciones",
-                "path": "04-marketing/09-gestion-suscripciones"
-              },
-              {
-                "title": "Frecuencia de Envío",
-                "path": "04-marketing/10-frecuencia-envio"
-              },
-              {
-                "title": "Reglas de Broadcasting",
-                "path": "04-marketing/11-reglas-broadcasting"
-              },
-              {
-                "title": "Secuencias Messenger",
-                "path": "04-marketing/12-secuencias-messenger"
+                "group": "Marketing",
+                "pages": [
+                  {
+                    "title": "Broadcasting Masivo",
+                    "path": "04-marketing/01-broadcasting-masivo"
+                  },
+                  {
+                    "title": "Plantillas Meta",
+                    "path": "04-marketing/02-plantillas-meta"
+                  },
+                  {
+                    "title": "Crear Plantillas",
+                    "path": "04-marketing/03-crear-plantillas"
+                  },
+                  {
+                    "title": "Sincronizar Plantillas",
+                    "path": "04-marketing/04-sincronizar-plantillas"
+                  },
+                  {
+                    "title": "Broadcasting Multimedia",
+                    "path": "04-marketing/05-broadcasting-multimedia"
+                  },
+                  {
+                    "title": "Broadcasting Personalizado",
+                    "path": "04-marketing/06-broadcasting-personalizado"
+                  },
+                  {
+                    "title": "Secuencias de Ventas",
+                    "path": "04-marketing/07-secuencias-ventas"
+                  },
+                  {
+                    "title": "Follow Up Automático",
+                    "path": "04-marketing/08-follow-up-automatico"
+                  },
+                  {
+                    "title": "Gestión de Suscripciones",
+                    "path": "04-marketing/09-gestion-suscripciones"
+                  },
+                  {
+                    "title": "Frecuencia de Envío",
+                    "path": "04-marketing/10-frecuencia-envio"
+                  },
+                  {
+                    "title": "Reglas de Broadcasting",
+                    "path": "04-marketing/11-reglas-broadcasting"
+                  },
+                  {
+                    "title": "Secuencias Messenger",
+                    "path": "04-marketing/12-secuencias-messenger"
+                  }
+                ],
+                "icon": "lucide-trending-up"
               }
             ]
           },
