@@ -1,63 +1,84 @@
 ---
-title: "Integrar E-SMART360 con Formularios de Elementor"
-description: "Aprende a enviar mensajes automáticos de WhatsApp cuando un usuario envía un formulario de Elementor en WordPress."
+title: Integrar E-SMART360 con Formularios de Elementor
+description: >-
+  Aprende a enviar mensajes automáticos de WhatsApp cuando un usuario envía un
+  formulario de Elementor en WordPress.
 ---
-
-<Callout kind="info">
+<Callout kind="info" collapsed="false">
   Conecta tus formularios de Elementor con E-SMART360 para recibir notificaciones instantáneas en WhatsApp cada vez que alguien completa un formulario en tu sitio web.
 </Callout>
 
 ## ¿Por Qué Integrar Elementor Forms con WhatsApp?
 
 - **Respuestas inmediatas**: Recibe leads en tiempo real sin revisar el correo
+
 - **Alta tasa de apertura**: Los mensajes de WhatsApp se leen en segundos, no en horas
+
 - **Seguimiento automatizado**: Responde automáticamente al contacto que llenó el formulario
+
 - **Notificaciones al equipo**: Envía alertas a múltiples agentes simultáneamente
 
 ## Requisitos
 
 - Un sitio web con **WordPress** y **Elementor Pro** (que incluye Elementor Forms)
+
 - Cuenta activa en **E-SMART360**
+
 - Número de WhatsApp conectado a E-SMART360
+
 - Plugin de **Make.com**, **Zapier** o acceso a **webhooks** (según el método que elijas)
 
 ## Método 1: Usando Make.com (Recomendado)
 
 <Steps>
-  <Step title="Configura el webhook en Make.com">
+  <Step title="Configura el webhook en Make.com" title-type="p">
     1. Crea un nuevo escenario en Make.com
+
     2. Agrega un módulo **"Webhook"** como disparador
+
     3. Copia la URL del webhook que genera Make
   </Step>
-  <Step title="Configura el formulario en Elementor">
+
+  <Step title="Configura el formulario en Elementor" title-type="p">
     1. En Elementor, edita tu formulario
+
     2. Ve a **"Actions After Submit"**
+
     3. Agrega **"Webhook"** como acción
+
     4. Pega la URL del webhook de Make.com
+
     5. Configura el método como **POST**
   </Step>
-  <Step title="Prueba el formulario">
+
+  <Step title="Prueba el formulario" title-type="p">
     Envía un formulario de prueba. Verifica que Make.com reciba los datos correctamente (nombre, email, teléfono, mensaje, etc.).
   </Step>
-  <Step title="Conecta Make.com con E-SMART360">
+
+  <Step title="Conecta Make.com con E-SMART360" title-type="p">
     En Make.com, agrega un módulo de **E-SMART360** o **WhatsApp Business**:
+
     - Selecciona la acción "Enviar mensaje de WhatsApp"
+
     - Configura el destinatario (tu número o el del lead)
+
     - Personaliza el mensaje usando los datos del formulario
-    
+
     **Ejemplo de mensaje:**
+
     ```
     🔔 Nuevo lead desde tu sitio web:
-    
+
     Nombre: {{name}}
     Email: {{email}}
     Teléfono: {{phone}}
     Mensaje: {{message}}
-    
+
     Fecha: {{fecha}}
     ```
   </Step>
-  <Step title="Activa el escenario">
+
+  <Step title="Activa el escenario" title-type="p">
     Guarda y activa tu escenario en Make.com. A partir de ahora, cada formulario enviado activará una notificación en WhatsApp.
   </Step>
 </Steps>
@@ -67,11 +88,14 @@ description: "Aprende a enviar mensajes automáticos de WhatsApp cuando un usuar
 Si tu plataforma soporta webhooks, puedes conectar directamente:
 
 1. En E-SMART360, genera una URL de **webhook entrante** (Incoming Webhook)
+
 2. En Elementor, agrega la acción **Webhook** después del envío
+
 3. Pega la URL del webhook de E-SMART360
+
 4. Configura los campos del formulario para que coincidan con las variables del webhook
 
-<Callout kind="warning">
+<Callout kind="warning" collapsed="false">
   **Importante**: Asegúrate de que tu formulario de Elementor tenga un campo de teléfono si quieres responderle al lead directamente por WhatsApp. Sin el número, solo podrás recibir la notificación tú.
 </Callout>
 
@@ -79,14 +103,15 @@ Si tu plataforma soporta webhooks, puedes conectar directamente:
 
 Puedes configurar una respuesta automática para el lead que llenó el formulario:
 
-<Columns>
-  <Card title="📥 Notificación Interna">
+<Columns cols="2">
+  <Card title="📥 Notificación Interna" horizontal="false">
     Mensaje para tu equipo:
-    "Nuevo lead: Juan Pérez - juan@email.com - Quiere información de planes"
+    "Nuevo lead: Juan Pérez - [juan@email.com](mailto:juan@email.com) - Quiere información de planes"
   </Card>
-  <Card title="🤖 Respuesta Automática al Lead">
+
+  <Card title="🤖 Respuesta Automática al Lead" horizontal="false">
     Mensaje para el contacto:
-    "¡Gracias por tu interés, {{nombre}}! Te responderemos en máximo 15 minutos ⏱️"
+    "¡Gracias por tu interés, ! Te responderemos en máximo 15 minutos ⏱️"
   </Card>
 </Columns>
 
@@ -94,32 +119,41 @@ Puedes configurar una respuesta automática para el lead que llenó el formulari
 
 Incluye estos campos para maximizar la integración:
 
-| Campo | Tipo | Propósito |
-|-------|------|-----------|
-| **Nombre** | Texto | Personalizar el mensaje |
-| **Teléfono** | Teléfono | Responderle al lead por WhatsApp |
-| **Email** | Email | Seguimiento por correo si es necesario |
-| **Mensaje / Consulta** | Texto largo | Entender la necesidad del lead |
+| Campo                  | Tipo        | Propósito                              |
+| ---------------------- | ----------- | -------------------------------------- |
+| **Nombre**             | Texto       | Personalizar el mensaje                |
+| **Teléfono**           | Teléfono    | Responderle al lead por WhatsApp       |
+| **Email**              | Email       | Seguimiento por correo si es necesario |
+| **Mensaje / Consulta** | Texto largo | Entender la necesidad del lead         |
 
-<Callout kind="tip">
+<Callout kind="tip" collapsed="false">
   **Mejora la experiencia**: Después de recibir el formulario, programa una secuencia de seguimiento automática:
+
   1. **Inmediato**: "Gracias por contactarnos"
+
   2. **5 min**: Envía un recurso útil (guía, catálogo, video)
+
   3. **1 hora**: "¿Te quedó alguna duda?"
+
   4. **24 horas**: "¿Quieres agendar una llamada?"
 </Callout>
 
 ## Solución de Problemas
 
-| Problema | Causa | Solución |
-|----------|-------|----------|
-| El webhook no recibe datos | URL incorrecta en Elementor | Verifica la URL del webhook |
-| El mensaje no llega a WhatsApp | Número no conectado o sin saldo | Verifica la conexión en E-SMART360 |
-| Datos incompletos en el mensaje | Mapeo incorrecto de variables | Revisa los nombres de campo en Make.com |
-| Error "Formato inválido" | Tipo de dato no soportado | Usa formato JSON en el webhook |
+| Problema                        | Causa                           | Solución                                |
+| ------------------------------- | ------------------------------- | --------------------------------------- |
+| El webhook no recibe datos      | URL incorrecta en Elementor     | Verifica la URL del webhook             |
+| El mensaje no llega a WhatsApp  | Número no conectado o sin saldo | Verifica la conexión en E-SMART360      |
+| Datos incompletos en el mensaje | Mapeo incorrecto de variables   | Revisa los nombres de campo en Make.com |
+| Error "Formato inválido"        | Tipo de dato no soportado       | Usa formato JSON en el webhook          |
 
 ## Próximos Pasos
 
 - [Integrar con otros formularios (WP Forms, Contact Form 7)](/07-integraciones/01-google-sheets-importar)
+
 - [Configurar webhooks salientes](/03-automatizacion/20-webhook-saliente)
+
 - [Automatizar el seguimiento de leads](/04-marketing/12-secuencias-messenger)
+
+-
+
