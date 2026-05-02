@@ -22,6 +22,11 @@
                 "group": "Panorama General",
                 "pages": [
                   {
+                    "title": "Introducción",
+                    "path": "introduction",
+                    "icon": "home"
+                  },
+                  {
                     "title": "Plataforma Vistazo General",
                     "path": "plataforma-overview",
                     "icon": "lucide-user-round-pen"
@@ -40,11 +45,6 @@
                     "title": "Tipos de Mensajes",
                     "path": "introduction/04-tipos-mensajes",
                     "icon": "message-square-text"
-                  },
-                  {
-                    "title": "Introducción",
-                    "path": "introduction",
-                    "icon": "home"
                   }
                 ],
                 "icon": "brick-wall-icon"
@@ -94,92 +94,92 @@
                   }
                 ],
                 "icon": "lucide-newspaper"
-              }
-            ]
-          },
-          {
-            "group": "Automatización",
-            "icon": "bot",
-            "pages": [
-              {
-                "title": "Flow Builder Intro",
-                "path": "03-automatizacion/01-flow-builder-intro"
               },
               {
-                "title": "Triggers y Disparadores",
-                "path": "03-automatizacion/02-triggers-disparadores"
-              },
-              {
-                "title": "Acciones de Flujo",
-                "path": "03-automatizacion/03-acciones-flujo"
-              },
-              {
-                "title": "Form Flows",
-                "path": "03-automatizacion/04-form-flows"
-              },
-              {
-                "title": "User Input Flow",
-                "path": "03-automatizacion/05-user-input-flow"
-              },
-              {
-                "title": "Webhooks Inbound",
-                "path": "03-automatizacion/06-webhooks-inbound"
-              },
-              {
-                "title": "HTTP API",
-                "path": "03-automatizacion/07-http-api"
-              },
-              {
-                "title": "Listas Dinámicas",
-                "path": "03-automatizacion/08-listas-dinamicas"
-              },
-              {
-                "title": "Keywords Bot",
-                "path": "03-automatizacion/09-keywords-bot"
-              },
-              {
-                "title": "Respuestas Automáticas",
-                "path": "03-automatizacion/10-respuestas-automaticas"
-              },
-              {
-                "title": "No Match Reply",
-                "path": "03-automatizacion/11-no-match-reply"
-              },
-              {
-                "title": "Branching Condicional",
-                "path": "03-automatizacion/12-branching-condicional"
-              },
-              {
-                "title": "Variables de Contexto",
-                "path": "03-automatizacion/13-variables-contexto"
-              },
-              {
-                "title": "Flujo Carrito de Compra",
-                "path": "03-automatizacion/14-flujo-carrito-compra"
-              },
-              {
-                "title": "Secuencias Temporizadas",
-                "path": "03-automatizacion/15-secuencias-temporizadas"
-              },
-              {
-                "title": "Mensaje de Bienvenida",
-                "path": "03-automatizacion/16-mensaje-bienvenida"
-              },
-              {
-                "title": "Resolver Duplicados",
-                "path": "03-automatizacion/17-duplicados-resolver"
-              },
-              {
-                "title": "Programación Inteligente",
-                "path": "03-automatizacion/18-programacion-inteligente"
-              },
-              {
-                "title": "Respuestas Fuera de Horario",
-                "path": "03-automatizacion/19-respuestas-fuera-horario"
-              },
-              {
-                "title": "Webhook Saliente",
-                "path": "03-automatizacion/20-webhook-saliente"
+                "group": "Automatización",
+                "pages": [
+                  {
+                    "title": "Flow Builder Intro",
+                    "path": "03-automatizacion/01-flow-builder-intro"
+                  },
+                  {
+                    "title": "Triggers y Disparadores",
+                    "path": "03-automatizacion/02-triggers-disparadores"
+                  },
+                  {
+                    "title": "Acciones de Flujo",
+                    "path": "03-automatizacion/03-acciones-flujo"
+                  },
+                  {
+                    "title": "Form Flows",
+                    "path": "03-automatizacion/04-form-flows"
+                  },
+                  {
+                    "title": "User Input Flow",
+                    "path": "03-automatizacion/05-user-input-flow"
+                  },
+                  {
+                    "title": "Webhooks Inbound",
+                    "path": "03-automatizacion/06-webhooks-inbound"
+                  },
+                  {
+                    "title": "HTTP API",
+                    "path": "03-automatizacion/07-http-api"
+                  },
+                  {
+                    "title": "Listas Dinámicas",
+                    "path": "03-automatizacion/08-listas-dinamicas"
+                  },
+                  {
+                    "title": "Keywords Bot",
+                    "path": "03-automatizacion/09-keywords-bot"
+                  },
+                  {
+                    "title": "Respuestas Automáticas",
+                    "path": "03-automatizacion/10-respuestas-automaticas"
+                  },
+                  {
+                    "title": "No Match Reply",
+                    "path": "03-automatizacion/11-no-match-reply"
+                  },
+                  {
+                    "title": "Branching Condicional",
+                    "path": "03-automatizacion/12-branching-condicional"
+                  },
+                  {
+                    "title": "Variables de Contexto",
+                    "path": "03-automatizacion/13-variables-contexto"
+                  },
+                  {
+                    "title": "Flujo Carrito de Compra",
+                    "path": "03-automatizacion/14-flujo-carrito-compra"
+                  },
+                  {
+                    "title": "Secuencias Temporizadas",
+                    "path": "03-automatizacion/15-secuencias-temporizadas"
+                  },
+                  {
+                    "title": "Mensaje de Bienvenida",
+                    "path": "03-automatizacion/16-mensaje-bienvenida"
+                  },
+                  {
+                    "title": "Resolver Duplicados",
+                    "path": "03-automatizacion/17-duplicados-resolver"
+                  },
+                  {
+                    "title": "Programación Inteligente",
+                    "path": "03-automatizacion/18-programacion-inteligente"
+                  },
+                  {
+                    "title": "Respuestas Fuera de Horario",
+                    "path": "03-automatizacion/19-respuestas-fuera-horario"
+                  },
+                  {
+                    "title": "Webhook Saliente",
+                    "path": "03-automatizacion/20-webhook-saliente"
+                  }
+                ],
+                "icon": "bot-message-square"
               }
             ]
           },
