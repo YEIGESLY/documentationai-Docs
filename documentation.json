@@ -15,18 +15,12 @@
         "icon": "book",
         "groups": [
           {
-            "group": "Empezemos",
-            "icon": "rocket",
+            "group": "E-Smart360 Guía para Usuarios",
+            "icon": "home",
             "pages": [
               {
-                "group": "Overview",
-                "icon": "home",
+                "group": "Empezemos",
                 "pages": [
-                  {
-                    "title": "Introducción",
-                    "path": "introduction",
-                    "icon": "home"
-                  },
                   {
                     "title": "Plataforma Vistazo General",
                     "path": "plataforma-overview",
@@ -46,9 +40,20 @@
                     "title": "Tipos de Mensajes",
                     "path": "introduction/04-tipos-mensajes",
                     "icon": "message-square-text"
+                  },
+                  {
+                    "title": "Introducción",
+                    "path": "introduction",
+                    "icon": "home"
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "group": "Empezemos",
+            "icon": "rocket",
+            "pages": [
               {
                 "title": "Quickstart",
                 "path": "quickstart",
