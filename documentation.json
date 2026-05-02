@@ -416,50 +416,55 @@
                   }
                 ],
                 "icon": "puzzle"
+              },
+              {
+                "group": "Administración",
+                "pages": [
+                  {
+                    "title": "Gestión de Contactos",
+                    "path": "08-administracion/01-gestion-contactos"
+                  },
+                  {
+                    "title": "Importar CSV",
+                    "path": "08-administracion/02-importar-csv"
+                  },
+                  {
+                    "title": "Campos Personalizados",
+                    "path": "08-administracion/03-campos-personalizados"
+                  },
+                  {
+                    "title": "Etiquetas y Labels",
+                    "path": "08-administracion/04-etiquetas-labels"
+                  },
+                  {
+                    "title": "Roles de Equipo",
+                    "path": "08-administracion/05-roles-equipo"
+                  },
+                  {
+                    "title": "Configurar Firma",
+                    "path": "08-administracion/06-configurar-firma"
+                  },
+                  {
+                    "title": "Seguridad y API Keys",
+                    "path": "08-administracion/07-seguridad-api-keys"
+                  },
+                  {
+                    "title": "Respaldos",
+                    "path": "08-administracion/08-respaldos"
+                  },
+                  {
+                    "title": "Buenas Prácticas",
+                    "path": "08-administracion/09-buenas-practicas"
+                  }
+                ],
+                "icon": "lucide-shield-user"
               }
             ]
           },
           {
             "group": "Administración",
             "icon": "shield",
-            "pages": [
-              {
-                "title": "Gestión de Contactos",
-                "path": "08-administracion/01-gestion-contactos"
-              },
-              {
-                "title": "Importar CSV",
-                "path": "08-administracion/02-importar-csv"
-              },
-              {
-                "title": "Campos Personalizados",
-                "path": "08-administracion/03-campos-personalizados"
-              },
-              {
-                "title": "Etiquetas y Labels",
-                "path": "08-administracion/04-etiquetas-labels"
-              },
-              {
-                "title": "Roles de Equipo",
-                "path": "08-administracion/05-roles-equipo"
-              },
-              {
-                "title": "Configurar Firma",
-                "path": "08-administracion/06-configurar-firma"
-              },
-              {
-                "title": "Seguridad y API Keys",
-                "path": "08-administracion/07-seguridad-api-keys"
-              },
-              {
-                "title": "Respaldos",
-                "path": "08-administracion/08-respaldos"
-              },
-              {
-                "title": "Buenas Prácticas",
-                "path": "08-administracion/09-buenas-practicas"
-              }
-            ]
+            "pages": []
           },
           {
             "group": "Recursos",
