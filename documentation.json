@@ -30,6 +30,21 @@
                     "title": "Plataforma Vistazo General",
                     "path": "plataforma-overview",
                     "icon": "lucide-user-round-pen"
+                  },
+                  {
+                    "title": "¿Qué es WhatsApp API",
+                    "path": "02-que-es-whatsapp-api",
+                    "icon": "message-circle"
+                  },
+                  {
+                    "title": "Términos Clave",
+                    "path": "03-terminos-clave",
+                    "icon": "key"
+                  },
+                  {
+                    "title": "Tipos de Mensajes",
+                    "path": "04-tipos-mensajes",
+                    "icon": "message-square-text"
                   }
                 ],
                 "icon": "home"
