@@ -19,6 +19,11 @@
             "icon": "home",
             "pages": [
               {
+                "group": "Recursos",
+                "pages": [],
+                "icon": "folder-archive"
+              },
+              {
                 "group": "Panorama General",
                 "pages": [
                   {
