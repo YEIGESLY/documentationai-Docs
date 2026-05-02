@@ -462,11 +462,6 @@
             ]
           },
           {
-            "group": "Administración",
-            "icon": "shield",
-            "pages": []
-          },
-          {
             "group": "Recursos",
             "icon": "folder",
             "pages": [
