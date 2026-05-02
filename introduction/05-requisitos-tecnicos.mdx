@@ -1,0 +1,105 @@
+---
+title: "Requisitos Técnicos para Usar E-SMART360"
+description: "Todo lo que necesitas saber sobre los requisitos técnicos, de hardware, software y cuentas para comenzar con E-SMART360."
+---
+
+<Callout kind="info">
+  Para usar E-SMART360 solo necesitas un navegador web moderno y una cuenta activa. No requieres instalar servidores ni software adicional. Sin embargo, hay requisitos específicos para cada canal.
+</Callout>
+
+## Requisitos Generales
+
+- **Navegador web**: Chrome 90+, Firefox 88+, Edge 90+, Safari 14+ (recomendamos Chrome)
+- **Conexión a internet**: Mínimo 5 Mbps de descarga (10 Mbps recomendado para equipos)
+- **Cuenta activa**: Registro en la plataforma E-SMART360
+
+## Requisitos por Canal
+
+### WhatsApp Cloud API
+
+| Requisito | Detalle |
+|-----------|---------|
+| Número de teléfono | Dedicado, no registrado previamente en WhatsApp (o migrable) |
+| Cuenta de Facebook | Necesaria para Facebook Business Manager |
+| Business Manager | Cuenta creada y configurada |
+| Verificación de negocio | Opcional pero recomendada (requiere documentos legales) |
+| Método de pago | Tarjeta de crédito/débito para costos de WhatsApp API |
+
+### Instagram
+
+- Cuenta de Instagram Business o Creator
+- Página de Facebook vinculada (requisito de Meta)
+- Facebook Business Manager configurado
+
+### Facebook Messenger
+
+- Página de Facebook creada
+- Facebook Business Manager
+
+### Telegram
+
+- Cuenta de Telegram
+- Token de Bot Father (creación del bot)
+
+### Webchat
+
+- Sitio web propio (para integrar el widget)
+- Script de integración proporcionado por E-SMART360
+
+## Requisitos para Integraciones
+
+<Columns cols="2">
+  <Card title="WooCommerce">
+    - WooCommerce 5.0+ instalado
+    - Plugin REST API habilitado
+    - Credenciales Consumer Key / Consumer Secret
+  </Card>
+  <Card title="Shopify">
+    - Tienda Shopify activa
+    - API key generada desde el panel de Shopify
+  </Card>
+  <Card title="Google Sheets">
+    - Cuenta de Google
+    - Conexión vía Google OAuth
+  </Card>
+  <Card title="WordPress">
+    - WordPress 5.0+ (cualquier tema)
+    - Plugin habilitado o código de integración
+  </Card>
+</Columns>
+
+## Límites Técnicos Conocidos
+
+<ExpandableGroup>
+  <Expandable title="Límites de medios (WhatsApp)">
+    - Imágenes: 5 MB (JPG, PNG, GIF)
+    - Videos: 16 MB (MP4, 3GPP)
+    - Documentos: 100 MB (PDF, DOCX, XLSX, PPTX)
+    - Audio: 16 MB (AAC, MP4, AMR, OGG)
+    - Stickers: 100 KB (WebP)
+  </Expandable>
+  <Expandable title="Límites de mensajería">
+    - Broadcasting: Depende del nivel de mensajería (Tier) de tu número
+    - Plantillas: Hasta 250 templates activas por WABA
+    - Botones en CTA: Hasta 3 por mensaje
+    - Opciones en lista: Hasta 10 por mensaje
+    - Productos en carrusel: Hasta 10
+  </Expandable>
+  <Expandable title="Límites de la plataforma">
+    - Contactos: Ilimitado (depende del plan)
+    - Usuarios/agentes: Depende del plan contratado
+    - Flujos activos: Depende del plan
+  </Expandable>
+</ExpandableGroup>
+
+## ¿Qué NO necesitas?
+
+- ❌ Servidores dedicados o VPS
+- ❌ Conocimientos de programación
+- ❌ Certificados SSL (la plataforma los gestiona)
+- ❌ Aplicación WhatsApp Business App instalada en tu celular
+- ❌ Conocimientos avanzados de APIs o webhooks
+
+<Callout kind="success">
+  En resumen: si tienes un número de teléfono, una cuenta de Facebook y acceso a internet, puedes empezar a usar E-SMART360 en cuestión de minutos.
+</Callout>

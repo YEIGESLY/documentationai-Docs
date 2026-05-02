@@ -1,0 +1,102 @@
+---
+title: "Tipos de Mensajes en la Plataforma"
+description: "Conoce los diferentes tipos de mensajes que puedes enviar y recibir en E-SMART360 y sus casos de uso."
+---
+
+<Callout kind="info">
+  E-SMART360 soporta múltiples tipos de mensajes en WhatsApp, desde texto plano hasta mensajes interactivos con botones, listas y formularios.
+</Callout>
+
+## Mensajes de Texto
+
+El tipo más básico. Incluye:
+- **Texto plano** — Mensajes simples con o sin formato (negritas, cursivas, listas).
+- **Con variables** — Personalización con datos del contacto: `{{nombre}}`, `{{pedido}}`, `{{monto}}`.
+- **Con emojis** — Soporte completo de emojis Unicode para dar calidez a las conversaciones.
+
+## Mensajes Multimedia
+
+<Columns cols="2">
+  <Card title="Imágenes">
+    - Formatos: JPG, PNG, GIF
+    - Tamaño máximo: 5 MB
+    - Usos: catálogos, promociones, fotos de producto
+  </Card>
+  <Card title="Videos">
+    - Formatos: MP4, 3GPP
+    - Tamaño máximo: 16 MB
+    - Usos: tutoriales, demostraciones
+  </Card>
+  <Card title="Documentos">
+    - Formatos: PDF, DOCX, XLSX, PPTX
+    - Tamaño máximo: 100 MB
+    - Usos: facturas, cotizaciones, contratos
+  </Card>
+  <Card title="Audio">
+    - Formatos: AAC, MP4, AMR, OGG
+    - Tamaño máximo: 16 MB
+    - Usos: notas de voz, mensajes rápidos
+  </Card>
+</Columns>
+
+## Mensajes Interactivos
+
+### Botones de llamada a la acción (CTA)
+
+Botones que el usuario puede presionar para realizar acciones específicas:
+
+- **URL** — Abre un enlace en el navegador
+- **Teléfono** — Inicia una llamada telefónica
+- **Copia de código** — Copia un código (promocional, de seguimiento)
+
+### Listas de opciones
+
+Menú desplegable con hasta 10 opciones que el usuario puede seleccionar:
+
+```
+"Selecciona una opción:"
+- 📦 Consultar mi pedido
+- 💰 Facturación
+- 🎯 Promociones
+- 👤 Hablar con agente
+```
+
+### Botones de respuesta rápida
+
+Hasta 3 botones con texto personalizado que aparecen debajo del mensaje.
+
+## Mensajes de Catálogo y Producto
+
+- **Catálogo simple** — Muestra productos con imagen, título, precio y enlace.
+- **Carrusel de productos** — Hasta 10 productos deslizables horizontalmente.
+- **Mensaje de producto individual** — Tarjeta de producto con botón "Comprar" o "Ver más".
+
+## WhatsApp Flows (Formularios nativos)
+
+Flows son formularios interactivos que se abren dentro de WhatsApp:
+
+- Captura de datos (nombre, email, teléfono)
+- Personalización de pedidos
+- Agendamiento de citas
+- Encuestas de satisfacción
+
+<Callout kind="warning">
+  Los WhatsApp Flows requieren configuración adicional y solo están disponibles en cuentas verificadas.
+</Callout>
+
+## Mensajes de Plantilla (Template)
+
+Son mensajes pre-diseñados que deben ser **aprobados por Meta** antes de usarse. Se utilizan para:
+
+- **Marketing** — Promociones, ofertas, lanzamientos
+- **Utilidad** — Confirmaciones de pedido, facturas, alertas
+- **Servicio** — Respuestas a consultas (generalmente dentro de ventana 24h)
+
+<ExpandableGroup>
+  <Expandable title="¿Puedo mezclar tipos de mensaje en una misma conversación?">
+    Sí. Puedes alternar entre texto, imágenes, botones y listas según el contexto de la conversación. La plataforma gestiona automáticamente el formato correcto.
+  </Expandable>
+  <Expandable title="¿Los mensajes interactivos tienen costo adicional?">
+    No. El costo depende del tipo de conversación (marketing, utilidad, servicio), no del tipo de mensaje enviado.
+  </Expandable>
+</ExpandableGroup>
