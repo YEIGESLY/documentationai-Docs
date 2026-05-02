@@ -19,6 +19,11 @@
             "icon": "home",
             "pages": [
               {
+                "group": "Ventas",
+                "pages": [],
+                "icon": "lucide-shopping-cart"
+              },
+              {
                 "group": "Panorama General",
                 "pages": [
                   {
