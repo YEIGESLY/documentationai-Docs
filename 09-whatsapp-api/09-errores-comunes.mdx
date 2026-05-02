@@ -1,0 +1,28 @@
+---
+title: "Errores Comunes de WhatsApp API"
+description: "Los errores más frecuentes al usar WhatsApp Business API y cómo identificarlos."
+---
+
+<Callout kind="info">Conoce los errores más comunes de la API de WhatsApp para diagnosticar y resolver problemas rápidamente.</Callout>
+
+## Errores de Autenticación
+| Código | Error | Causa |
+|--------|-------|-------|
+| 401 | No autorizado | API Key inválida o expirada |
+| 403 | Prohibido | Permisos insuficientes |
+
+## Errores de Mensajería
+| Código | Error | Causa |
+|--------|-------|-------|
+| 470 | Fuera de ventana 24h | Intentar enviar mensaje de servicio sin plantilla |
+| 471 | Límite alcanzado | Has excedido el límite diario de mensajes |
+| 472 | Frecuencia excedida | Demasiados mensajes al mismo usuario |
+
+## Errores de Plantillas
+| Código | Error | Causa |
+|--------|-------|-------|
+| 481 | Plantilla rechazada | No cumple políticas de Meta |
+| 482 | Plantilla no encontrada | El ID de plantilla no existe |
+| 483 | Parámetros incorrectos | Número de variables no coincide |
+
+<Callout kind="info">E-SMART360 muestra estos errores de forma legible en el panel. Si ves un error técnico, consulta esta guía para entenderlo.</Callout>
