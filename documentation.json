@@ -20,6 +20,7 @@
             "pages": [
               {
                 "group": "Overview",
+                "icon": "home",
                 "pages": [
                   {
                     "title": "Introducción",
@@ -46,8 +47,7 @@
                     "path": "introduction/04-tipos-mensajes",
                     "icon": "message-square-text"
                   }
-                ],
-                "icon": "home"
+                ]
               },
               {
                 "title": "Quickstart",
@@ -61,20 +61,454 @@
             "icon": "compass",
             "pages": [
               {
-                "title": "Features",
-                "path": "features",
-                "icon": "file-text"
+                "title": "Registro de Plataforma",
+                "path": "02-primeros-pasos/02-01-registro-plataforma"
+              },
+              {
+                "title": "Conexión a WhatsApp",
+                "path": "02-primeros-pasos/02-02-conexion-whatsapp"
+              },
+              {
+                "title": "Embedded Signup",
+                "path": "02-primeros-pasos/02-03-embedded-signup"
+              },
+              {
+                "title": "Verificación de Negocio",
+                "path": "02-primeros-pasos/02-04-verificacion-negocio"
+              },
+              {
+                "title": "Migración BSP",
+                "path": "02-primeros-pasos/02-05-migracion-bsp"
+              },
+              {
+                "title": "Configuración Inicial",
+                "path": "02-primeros-pasos/02-06-configuracion-inicial"
+              },
+              {
+                "title": "Verificar Teléfono",
+                "path": "02-primeros-pasos/02-07-verificar-telefono"
+              },
+              {
+                "title": "Crear Facebook Business",
+                "path": "02-primeros-pasos/02-08-crear-facebook-business"
+              },
+              {
+                "title": "Conectar Número",
+                "path": "02-primeros-pasos/02-09-conectar-numero"
+              },
+              {
+                "title": "Siete Días Gratis",
+                "path": "02-primeros-pasos/02-10-siete-dias-gratis"
               }
             ]
           },
           {
-            "group": "Advanced",
-            "icon": "layers",
+            "group": "Automatización",
+            "icon": "bot",
             "pages": [
               {
-                "title": "Integrations",
-                "path": "integrations",
-                "icon": "plug"
+                "title": "Flow Builder Intro",
+                "path": "03-automatizacion/01-flow-builder-intro"
+              },
+              {
+                "title": "Triggers y Disparadores",
+                "path": "03-automatizacion/02-triggers-disparadores"
+              },
+              {
+                "title": "Acciones de Flujo",
+                "path": "03-automatizacion/03-acciones-flujo"
+              },
+              {
+                "title": "Form Flows",
+                "path": "03-automatizacion/04-form-flows"
+              },
+              {
+                "title": "User Input Flow",
+                "path": "03-automatizacion/05-user-input-flow"
+              },
+              {
+                "title": "Webhooks Inbound",
+                "path": "03-automatizacion/06-webhooks-inbound"
+              },
+              {
+                "title": "HTTP API",
+                "path": "03-automatizacion/07-http-api"
+              },
+              {
+                "title": "Listas Dinámicas",
+                "path": "03-automatizacion/08-listas-dinamicas"
+              },
+              {
+                "title": "Keywords Bot",
+                "path": "03-automatizacion/09-keywords-bot"
+              },
+              {
+                "title": "Respuestas Automáticas",
+                "path": "03-automatizacion/10-respuestas-automaticas"
+              },
+              {
+                "title": "No Match Reply",
+                "path": "03-automatizacion/11-no-match-reply"
+              },
+              {
+                "title": "Branching Condicional",
+                "path": "03-automatizacion/12-branching-condicional"
+              },
+              {
+                "title": "Variables de Contexto",
+                "path": "03-automatizacion/13-variables-contexto"
+              },
+              {
+                "title": "Flujo Carrito de Compra",
+                "path": "03-automatizacion/14-flujo-carrito-compra"
+              },
+              {
+                "title": "Secuencias Temporizadas",
+                "path": "03-automatizacion/15-secuencias-temporizadas"
+              },
+              {
+                "title": "Mensaje de Bienvenida",
+                "path": "03-automatizacion/16-mensaje-bienvenida"
+              },
+              {
+                "title": "Resolver Duplicados",
+                "path": "03-automatizacion/17-duplicados-resolver"
+              },
+              {
+                "title": "Programación Inteligente",
+                "path": "03-automatizacion/18-programacion-inteligente"
+              },
+              {
+                "title": "Respuestas Fuera de Horario",
+                "path": "03-automatizacion/19-respuestas-fuera-horario"
+              },
+              {
+                "title": "Webhook Saliente",
+                "path": "03-automatizacion/20-webhook-saliente"
+              }
+            ]
+          },
+          {
+            "group": "Marketing",
+            "icon": "megaphone",
+            "pages": [
+              {
+                "title": "Broadcasting Masivo",
+                "path": "04-marketing/01-broadcasting-masivo"
+              },
+              {
+                "title": "Plantillas Meta",
+                "path": "04-marketing/02-plantillas-meta"
+              },
+              {
+                "title": "Crear Plantillas",
+                "path": "04-marketing/03-crear-plantillas"
+              },
+              {
+                "title": "Sincronizar Plantillas",
+                "path": "04-marketing/04-sincronizar-plantillas"
+              },
+              {
+                "title": "Broadcasting Multimedia",
+                "path": "04-marketing/05-broadcasting-multimedia"
+              },
+              {
+                "title": "Broadcasting Personalizado",
+                "path": "04-marketing/06-broadcasting-personalizado"
+              },
+              {
+                "title": "Secuencias de Ventas",
+                "path": "04-marketing/07-secuencias-ventas"
+              },
+              {
+                "title": "Follow Up Automático",
+                "path": "04-marketing/08-follow-up-automatico"
+              },
+              {
+                "title": "Gestión de Suscripciones",
+                "path": "04-marketing/09-gestion-suscripciones"
+              },
+              {
+                "title": "Frecuencia de Envío",
+                "path": "04-marketing/10-frecuencia-envio"
+              },
+              {
+                "title": "Reglas de Broadcasting",
+                "path": "04-marketing/11-reglas-broadcasting"
+              },
+              {
+                "title": "Secuencias Messenger",
+                "path": "04-marketing/12-secuencias-messenger"
+              }
+            ]
+          },
+          {
+            "group": "Ventas",
+            "icon": "shopping-cart",
+            "pages": [
+              {
+                "title": "Catálogos de Productos",
+                "path": "05-ventas/01-catalogos-productos"
+              },
+              {
+                "title": "Catálogos Carousel",
+                "path": "05-ventas/02-catalogos-carousel"
+              },
+              {
+                "title": "WooCommerce Intro",
+                "path": "05-ventas/03-woocommerce-intro"
+              },
+              {
+                "title": "WooCommerce Pedidos",
+                "path": "05-ventas/04-woocommerce-pedidos"
+              },
+              {
+                "title": "Shopify Conexión",
+                "path": "05-ventas/05-shopify-conexion"
+              },
+              {
+                "title": "Shopify Carrito Abandonado",
+                "path": "05-ventas/06-shopify-carrito-abandonado"
+              },
+              {
+                "title": "Shopify Notificaciones",
+                "path": "05-ventas/07-shopify-notificaciones"
+              },
+              {
+                "title": "Confirmar Pedidos COD",
+                "path": "05-ventas/08-confirmar-pedidos-cod"
+              },
+              {
+                "title": "Convertir COD Prepago",
+                "path": "05-ventas/09-convertir-cod-prepago"
+              },
+              {
+                "title": "WordPress Users HTTP",
+                "path": "05-ventas/10-wordpress-users-http"
+              },
+              {
+                "title": "Ventas Webchat",
+                "path": "05-ventas/11-ventas-webchat"
+              },
+              {
+                "title": "Embed Signup WooCommerce",
+                "path": "05-ventas/12-embed-signup-woocommerce"
+              },
+              {
+                "title": "CTA WhatsApp Ads",
+                "path": "05-ventas/13-cta-whatsapp-ads"
+              }
+            ]
+          },
+          {
+            "group": "Atención al Cliente",
+            "icon": "headphones",
+            "pages": [
+              {
+                "title": "Livechat Dashboard",
+                "path": "06-atencion-cliente/01-livechat-dashboard"
+              },
+              {
+                "title": "Bandeja Compartida",
+                "path": "06-atencion-cliente/02-bandeja-compartida"
+              },
+              {
+                "title": "Handover a Agente",
+                "path": "06-atencion-cliente/03-handover-agente"
+              },
+              {
+                "title": "AI Assistant",
+                "path": "06-atencion-cliente/04-ai-assistant"
+              },
+              {
+                "title": "Entrenar AI FAQ",
+                "path": "06-atencion-cliente/05-entrenar-ai-faq"
+              },
+              {
+                "title": "Entrenar AI URLs",
+                "path": "06-atencion-cliente/06-entrenar-ai-urls"
+              },
+              {
+                "title": "AI Intent Detection",
+                "path": "06-atencion-cliente/07-ai-intent-detection"
+              },
+              {
+                "title": "Botones CTA",
+                "path": "06-atencion-cliente/08-botones-cta"
+              },
+              {
+                "title": "Firma en Mensajes",
+                "path": "06-atencion-cliente/09-firma-mensajes"
+              },
+              {
+                "title": "Bloquear Spam",
+                "path": "06-atencion-cliente/10-bloquear-spam"
+              },
+              {
+                "title": "Members Restriction",
+                "path": "06-atencion-cliente/11-members-restriction"
+              },
+              {
+                "title": "Chat Notas Internas",
+                "path": "06-atencion-cliente/12-chat-notas-internas"
+              },
+              {
+                "title": "Dark Mode Inbox",
+                "path": "06-atencion-cliente/13-dark-mode-inbox"
+              }
+            ]
+          },
+          {
+            "group": "Integraciones",
+            "icon": "plug",
+            "pages": [
+              {
+                "title": "Importar a Google Sheets",
+                "path": "07-integraciones/01-google-sheets-importar"
+              },
+              {
+                "title": "Enviar a Google Sheets",
+                "path": "07-integraciones/02-google-sheets-enviar"
+              },
+              {
+                "title": "Conectar con Zapier",
+                "path": "07-integraciones/03-zapier-conectar"
+              },
+              {
+                "title": "Make Pabbly",
+                "path": "07-integraciones/04-make-pabbly"
+              },
+              {
+                "title": "Widget para WordPress",
+                "path": "07-integraciones/05-wordpress-widget"
+              },
+              {
+                "title": "Chatbot para WordPress",
+                "path": "07-integraciones/06-wordpress-chatbot"
+              },
+              {
+                "title": "Mailchimp",
+                "path": "07-integraciones/07-mailchimp"
+              },
+              {
+                "title": "ActiveCampaign",
+                "path": "07-integraciones/08-activecampaign"
+              },
+              {
+                "title": "Brevo",
+                "path": "07-integraciones/09-brevo"
+              },
+              {
+                "title": "SendGrid",
+                "path": "07-integraciones/10-sendgrid"
+              },
+              {
+                "title": "Typeform y Jotform",
+                "path": "07-integraciones/11-typeform-jotform"
+              },
+              {
+                "title": "Webflow y Framer",
+                "path": "07-integraciones/12-webflow-framer"
+              },
+              {
+                "title": "Facebook Leads",
+                "path": "07-integraciones/13-facebook-leads"
+              },
+              {
+                "title": "Calendly y Cal.com",
+                "path": "07-integraciones/14-calendly-calcom"
+              },
+              {
+                "title": "Elementor Forms",
+                "path": "07-integraciones/15-elementor-forms"
+              }
+            ]
+          },
+          {
+            "group": "Administración",
+            "icon": "shield",
+            "pages": [
+              {
+                "title": "Gestión de Contactos",
+                "path": "08-administracion/01-gestion-contactos"
+              },
+              {
+                "title": "Importar CSV",
+                "path": "08-administracion/02-importar-csv"
+              },
+              {
+                "title": "Campos Personalizados",
+                "path": "08-administracion/03-campos-personalizados"
+              },
+              {
+                "title": "Etiquetas y Labels",
+                "path": "08-administracion/04-etiquetas-labels"
+              },
+              {
+                "title": "Roles de Equipo",
+                "path": "08-administracion/05-roles-equipo"
+              },
+              {
+                "title": "Configurar Firma",
+                "path": "08-administracion/06-configurar-firma"
+              },
+              {
+                "title": "Seguridad y API Keys",
+                "path": "08-administracion/07-seguridad-api-keys"
+              },
+              {
+                "title": "Respaldos",
+                "path": "08-administracion/08-respaldos"
+              },
+              {
+                "title": "Buenas Prácticas",
+                "path": "08-administracion/09-buenas-practicas"
+              }
+            ]
+          },
+          {
+            "group": "Recursos",
+            "icon": "folder",
+            "pages": [
+              {
+                "title": "FAQ General",
+                "path": "10-recursos/01-faq-general"
+              },
+              {
+                "title": "FAQ Legal",
+                "path": "10-recursos/02-faq-legal"
+              },
+              {
+                "title": "Códigos de Error",
+                "path": "10-recursos/03-codigos-error"
+              },
+              {
+                "title": "Changelog",
+                "path": "10-recursos/04-changelog"
+              },
+              {
+                "title": "Pricing y Planes",
+                "path": "10-recursos/05-pricing-planes"
+              },
+              {
+                "title": "Ciclo de Billing",
+                "path": "10-recursos/06-billing-ciclo"
+              },
+              {
+                "title": "Cancelar Suscripción",
+                "path": "10-recursos/07-cancelar-suscripcion"
+              },
+              {
+                "title": "Soporte y Contacto",
+                "path": "10-recursos/08-soporte-contacto"
+              },
+              {
+                "title": "Migrar Número",
+                "path": "10-recursos/09-migrar-numero"
+              },
+              {
+                "title": "Glosario",
+                "path": "10-recursos/10-glosario"
               }
             ]
           }
