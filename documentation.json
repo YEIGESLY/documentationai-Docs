@@ -292,64 +292,64 @@
                   }
                 ],
                 "icon": "lucide-shopping-cart"
-              }
-            ]
-          },
-          {
-            "group": "Atención al Cliente",
-            "icon": "headphones",
-            "pages": [
-              {
-                "title": "Livechat Dashboard",
-                "path": "06-atencion-cliente/01-livechat-dashboard"
               },
               {
-                "title": "Bandeja Compartida",
-                "path": "06-atencion-cliente/02-bandeja-compartida"
-              },
-              {
-                "title": "Handover a Agente",
-                "path": "06-atencion-cliente/03-handover-agente"
-              },
-              {
-                "title": "AI Assistant",
-                "path": "06-atencion-cliente/04-ai-assistant"
-              },
-              {
-                "title": "Entrenar AI FAQ",
-                "path": "06-atencion-cliente/05-entrenar-ai-faq"
-              },
-              {
-                "title": "Entrenar AI URLs",
-                "path": "06-atencion-cliente/06-entrenar-ai-urls"
-              },
-              {
-                "title": "AI Intent Detection",
-                "path": "06-atencion-cliente/07-ai-intent-detection"
-              },
-              {
-                "title": "Botones CTA",
-                "path": "06-atencion-cliente/08-botones-cta"
-              },
-              {
-                "title": "Firma en Mensajes",
-                "path": "06-atencion-cliente/09-firma-mensajes"
-              },
-              {
-                "title": "Bloquear Spam",
-                "path": "06-atencion-cliente/10-bloquear-spam"
-              },
-              {
-                "title": "Members Restriction",
-                "path": "06-atencion-cliente/11-members-restriction"
-              },
-              {
-                "title": "Chat Notas Internas",
-                "path": "06-atencion-cliente/12-chat-notas-internas"
-              },
-              {
-                "title": "Dark Mode Inbox",
-                "path": "06-atencion-cliente/13-dark-mode-inbox"
+                "group": "Atención al cliente",
+                "pages": [
+                  {
+                    "title": "Livechat Dashboard",
+                    "path": "06-atencion-cliente/01-livechat-dashboard"
+                  },
+                  {
+                    "title": "Bandeja Compartida",
+                    "path": "06-atencion-cliente/02-bandeja-compartida"
+                  },
+                  {
+                    "title": "Handover a Agente",
+                    "path": "06-atencion-cliente/03-handover-agente"
+                  },
+                  {
+                    "title": "AI Assistant",
+                    "path": "06-atencion-cliente/04-ai-assistant"
+                  },
+                  {
+                    "title": "Entrenar AI FAQ",
+                    "path": "06-atencion-cliente/05-entrenar-ai-faq"
+                  },
+                  {
+                    "title": "Entrenar AI URLs",
+                    "path": "06-atencion-cliente/06-entrenar-ai-urls"
+                  },
+                  {
+                    "title": "AI Intent Detection",
+                    "path": "06-atencion-cliente/07-ai-intent-detection"
+                  },
+                  {
+                    "title": "Botones CTA",
+                    "path": "06-atencion-cliente/08-botones-cta"
+                  },
+                  {
+                    "title": "Firma en Mensajes",
+                    "path": "06-atencion-cliente/09-firma-mensajes"
+                  },
+                  {
+                    "title": "Bloquear Spam",
+                    "path": "06-atencion-cliente/10-bloquear-spam"
+                  },
+                  {
+                    "title": "Members Restriction",
+                    "path": "06-atencion-cliente/11-members-restriction"
+                  },
+                  {
+                    "title": "Dark Mode Inbox",
+                    "path": "06-atencion-cliente/13-dark-mode-inbox"
+                  },
+                  {
+                    "title": "Chat Notas Internas",
+                    "path": "06-atencion-cliente/12-chat-notas-internas"
+                  }
+                ],
+                "icon": "lucide-life-buoy"
               }
             ]
           },
