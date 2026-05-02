@@ -19,7 +19,7 @@
             "icon": "home",
             "pages": [
               {
-                "group": "Empezemos",
+                "group": "Panorama General",
                 "pages": [
                   {
                     "title": "Plataforma Vistazo General",
@@ -46,64 +46,54 @@
                     "path": "introduction",
                     "icon": "home"
                   }
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Empezemos",
-            "icon": "rocket",
-            "pages": [
-              {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap"
-              }
-            ]
-          },
-          {
-            "group": "Primeros Pasos",
-            "icon": "compass",
-            "pages": [
-              {
-                "title": "Registro de Plataforma",
-                "path": "02-primeros-pasos/02-01-registro-plataforma"
+                ],
+                "icon": "brick-wall-icon"
               },
               {
-                "title": "Conexión a WhatsApp",
-                "path": "02-primeros-pasos/02-02-conexion-whatsapp"
-              },
-              {
-                "title": "Embedded Signup",
-                "path": "02-primeros-pasos/02-03-embedded-signup"
-              },
-              {
-                "title": "Verificación de Negocio",
-                "path": "02-primeros-pasos/02-04-verificacion-negocio"
-              },
-              {
-                "title": "Migración BSP",
-                "path": "02-primeros-pasos/02-05-migracion-bsp"
-              },
-              {
-                "title": "Configuración Inicial",
-                "path": "02-primeros-pasos/02-06-configuracion-inicial"
-              },
-              {
-                "title": "Verificar Teléfono",
-                "path": "02-primeros-pasos/02-07-verificar-telefono"
-              },
-              {
-                "title": "Crear Facebook Business",
-                "path": "02-primeros-pasos/02-08-crear-facebook-business"
-              },
-              {
-                "title": "Conectar Número",
-                "path": "02-primeros-pasos/02-09-conectar-numero"
-              },
-              {
-                "title": "Siete Días Gratis",
-                "path": "02-primeros-pasos/02-10-siete-dias-gratis"
+                "group": "Primeros Pasos",
+                "pages": [
+                  {
+                    "title": "Conexión a WhatsApp",
+                    "path": "02-primeros-pasos/02-02-conexion-whatsapp"
+                  },
+                  {
+                    "title": "Embedded Signup",
+                    "path": "02-primeros-pasos/02-03-embedded-signup"
+                  },
+                  {
+                    "title": "Verificación de Negocio",
+                    "path": "02-primeros-pasos/02-04-verificacion-negocio"
+                  },
+                  {
+                    "title": "Registro de Plataforma",
+                    "path": "02-primeros-pasos/02-01-registro-plataforma"
+                  },
+                  {
+                    "title": "Migración BSP",
+                    "path": "02-primeros-pasos/02-05-migracion-bsp"
+                  },
+                  {
+                    "title": "Configuración Inicial",
+                    "path": "02-primeros-pasos/02-06-configuracion-inicial"
+                  },
+                  {
+                    "title": "Verificar Teléfono",
+                    "path": "02-primeros-pasos/02-07-verificar-telefono"
+                  },
+                  {
+                    "title": "Crear Facebook Business",
+                    "path": "02-primeros-pasos/02-08-crear-facebook-business"
+                  },
+                  {
+                    "title": "Siete Días Gratis",
+                    "path": "02-primeros-pasos/02-10-siete-dias-gratis"
+                  },
+                  {
+                    "title": "Conectar Número",
+                    "path": "02-primeros-pasos/02-09-conectar-numero"
+                  }
+                ],
+                "icon": "lucide-newspaper"
               }
             ]
           },
