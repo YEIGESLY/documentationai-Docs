@@ -38,12 +38,12 @@
                   },
                   {
                     "title": "Términos Clave",
-                    "path": "03-terminos-clave",
+                    "path": "introduction/03-terminos-clave",
                     "icon": "key"
                   },
                   {
                     "title": "Tipos de Mensajes",
-                    "path": "04-tipos-mensajes",
+                    "path": "introduction/04-tipos-mensajes",
                     "icon": "message-square-text"
                   }
                 ],
