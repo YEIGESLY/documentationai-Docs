@@ -1,0 +1,12 @@
+---
+title: "Secuencias de Ventas"
+description: "Flujos multi-paso para nurturing y ventas."
+---
+
+<Callout kind="info">Secuencias automatizadas de varios pasos para guiar al prospecto hasta la conversión.</Callout>
+```mermaid
+flowchart LR
+    A[Lead]-->B[Día1:Bienvenida]-->C[Día2:Valor]-->D[Día4:Oferta]-->E{Compra?}
+    E-->|Sí|F[Venta]
+    E-->|No|G[Día14:Seguimiento]
+```

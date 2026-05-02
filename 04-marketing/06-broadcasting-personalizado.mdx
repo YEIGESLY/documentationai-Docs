@@ -1,0 +1,18 @@
+---
+title: "Broadcasting Personalizado"
+description: "Mensajes únicos por contacto usando variables."
+---
+
+<Callout kind="info">Usa variables para que cada contacto reciba un mensaje único.</Callout>
+| Placeholder | Ejemplo |
+|-------------|---------|
+| {{1}} | Nombre del contacto |
+| {{2}} | Último pedido |
+| {{3}} | Descuento personalizado |
+<Steps>
+  <Step title="Plantilla con variables">"Hola {{1}}, descuento {{3}}".</Step>
+  <Step title="Sube CSV">Columnas: teléfono, nombre, código.</Step>
+  <Step title="Mapea">Asigna columnas a placeholders.</Step>
+  <Step title="Envía">Cada contacto recibe su versión.</Step>
+</Steps>
+<Callout kind="tip">La personalización aumenta conversiones hasta 40%.</Callout>

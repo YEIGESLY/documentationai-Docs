@@ -1,0 +1,138 @@
+---
+title: "Secuencias de Mensajes en Messenger (Facebook e Instagram)"
+description: "Aprende a crear secuencias automatizadas de mensajes en Messenger para nutrir leads y automatizar comunicaciones."
+---
+
+<Callout kind="info">
+  Las secuencias de mensajes te permiten enviar una serie de mensajes automatizados a tus contactos en intervalos programados, ideales para campañas de nutrición de leads, onboarding y seguimiento.
+</Callout>
+
+## ¿Qué son las Secuencias de Mensajes?
+
+Una secuencia de mensajes es un conjunto de mensajes pre-configurados que se envían de forma automática a los suscriptores basándose en disparadores y horarios predefinidos. A diferencia de los broadcasts (mensajes masivos), las secuencias son personalizadas y progresivas.
+
+### Diferencia entre Broadcast y Secuencia
+
+| Característica | Broadcast | Secuencia |
+|---------------|-----------|-----------|
+| **Momento** | Se envía una sola vez | Se despliega en el tiempo |
+| **Personalización** | Básica | Avanzada (por comportamiento) |
+| **Automatización** | Manual o programada | Automática por disparadores |
+| **Objetivo** | Comunicación única | Nutrición y conversión |
+
+## Tipos de Secuencias
+
+<Columns>
+  <Card title="👋 Bienvenida">
+    3-5 mensajes durante los primeros días para presentar tu negocio, valores y oferta inicial.
+  </Card>
+  <Card title="🎓 Educativa">
+    Contenido de valor escalonado: tips, guías, casos de éxito.
+  </Card>
+  <Card title="💰 Ventas">
+    Secuencia orientada a conversión con ofertas, testimonios y CTAs.
+  </Card>
+  <Card title="🔄 Re-engagement">
+    Para reactivar contactos inactivos con incentivos especiales.
+  </Card>
+</Columns>
+
+## Cómo Crear una Secuencia en E-SMART360
+
+<Steps>
+  <Step title="Accede al Flow Builder">
+    En tu panel de E-SMART360, ve a **Marketing > Secuencias** o **Bot Manager > New Sequence**.
+  </Step>
+  <Step title="Nombra tu secuencia">
+    Usa un nombre descriptivo: "Onboarding Clientes Nuevos - 5 Días"
+  </Step>
+  <Step title="Configura el disparador">
+    Define qué evento inicia la secuencia:
+    - Nuevo suscriptor
+    - Palabra clave específica
+    - Click en un botón
+    - Compra realizada
+    - Etiqueta asignada
+  </Step>
+  <Step title="Agrega los mensajes de la secuencia">
+    Para cada mensaje en la secuencia:
+    1. **Escribe el contenido** (texto, imagen, video, botón)
+    2. **Define el delay**: ¿A los 5 minutos? ¿3 horas? ¿1 día?
+    3. **Establece condiciones** (opcional): "Solo si no ha comprado aún"
+  </Step>
+  <Step title="Revisa y activa">
+    Previsualiza la secuencia completa. Verifica los tiempos y contenidos. Actívala cuando esté lista.
+  </Step>
+</Steps>
+
+## Ideas para Secuencias
+
+### Secuencia de Onboarding (5 días)
+
+| Día | Mensaje | Objetivo |
+|-----|---------|----------|
+| **Día 1** (inmediato) | "¡Bienvenido! Aquí tienes tu guía de inicio 🚀" | Presentación |
+| **Día 2** (24h) | "¿Sabías que puedes hacer X con nuestra herramienta?" | Educar |
+| **Día 3** (48h) | "Mira este caso de éxito de un cliente como tú" | Prueba social |
+| **Día 5** (72h) | "Oferta especial solo para nuevos miembros 🎁" | Conversión |
+| **Día 7** (5 días) | "¿Necesitas ayuda? Un asesor te espera" | Soporte |
+
+### Secuencia de Carrito Abandonado
+
+1. **15 min**: "Olvidaste algo en tu carrito 🛒"
+2. **3 horas**: "Tu carrito sigue esperando. ¿Necesitas ayuda?"
+3. **24 horas**: "¡Última oportunidad! 10% de descuento en tu carrito"
+4. **48 horas**: "Hemos guardado tu carrito. Vuelve cuando quieras"
+
+<Callout kind="tip">
+  **Consejo**: No todas las secuencias necesitan ser de ventas. Una secuencia educativa bien hecha genera más confianza y leads calificados a largo plazo.
+</Callout>
+
+## Configuración Avanzada
+
+### Segmentación por Etiquetas
+
+Puedes hacer que las secuencias solo se activen para contactos con ciertas etiquetas:
+
+- `#nuevo`: Secuencia de bienvenida
+- `#carrito_abandonado`: Secuencia de recuperación
+- `#cliente_vip`: Secuencia de fidelización
+- `#inactivo_30d`: Secuencia de re-engagement
+
+### Condiciones y Ramificaciones
+
+Usa condiciones para crear ramas en tu secuencia:
+
+```
+Usuario recibe mensaje 1 →
+  [Hizo clic en "Ver más"?]
+    Sí → Mensaje 2 (profundiza)
+    No → Mensaje 2B (ofrece alternativa)
+```
+
+### Rate Limiting
+
+Para evitar saturar a tus contactos:
+
+- **Máximo 1 mensaje por hora** en secuencias cortas
+- **Máximo 3 mensajes por día** en secuencias largas
+- **Respetar el horario** del contacto (no enviar de madrugada)
+
+## Monitoreo de Secuencias
+
+| Métrica | Qué mide | Valor saludable |
+|---------|----------|----------------|
+| **Tasa de apertura** | % que abrió los mensajes | >80% en WhatsApp |
+| **Tasa de clics** | % que hizo clic en CTAs | >15% |
+| **Tasa de baja** | % que canceló suscripción | <5% |
+| **Conversión** | % que completó la acción deseada | Depende del objetivo |
+
+<Callout kind="note">
+  Las secuencias de mensajes son una de las herramientas más poderosas de automatización. Una secuencia bien diseñada puede ser equivalente a tener un vendedor trabajando 24/7.
+</Callout>
+
+## Próximos Pasos
+
+- [Programar respuestas inteligentes con Smart Delay](/03-automatizacion/18-programacion-inteligente)
+- [Configurar campañas de broadcast](/04-marketing/01-broadcasting-masivo)
+- [Segmentar contactos por etiquetas](/04-marketing/09-gestion-suscripciones)
