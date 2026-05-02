@@ -1,0 +1,70 @@
+---
+title: "Conexión de WhatsApp Business con E-SMART360"
+description: "Aprende a conectar tu cuenta de WhatsApp Business con la plataforma usando Embedded Signup o configuración manual."
+---
+
+<Callout kind="info">
+  Conectar tu WhatsApp Business con E-SMART360 es el paso más importante. Hay dos métodos principales: Embedded Signup (recomendado) y conexión manual.
+</Callout>
+
+## Método recomendado: Embedded Signup
+
+Embedded Signup es el método más rápido y seguro para conectar tu WhatsApp. Meta y E-SMART360 trabajan juntos para crear y configurar automáticamente tu cuenta de WhatsApp Business.
+
+<Steps>
+  <Step title="Inicia desde el dashboard">
+    Ve a Configuración > Canales > WhatsApp y selecciona "Conectar con Embedded Signup".
+  </Step>
+  <Step title="Inicia sesión con Facebook">
+    Se abrirá una ventana de Meta. Inicia sesión con tu cuenta de Facebook (si no tienes una, créala).
+  </Step>
+  <Step title="Selecciona o crea Business Manager">
+    Si ya tienes un Business Manager, selecciónalo. Si no, el asistente te guiará para crear uno nuevo.
+  </Step>
+  <Step title="Ingresa tu número de teléfono">
+    Proporciona el número que usarás para WhatsApp Business. Debe ser un número que pueda recibir el código de verificación por SMS o llamada.
+  </Step>
+  <Step title="Verifica el número">
+    Ingresa el código de 6 dígitos que recibiste por SMS o llamada telefónica.
+  </Step>
+  <Step title="¡Conectado!">
+    Una vez verificado, tu número quedará conectado a E-SMART360 y podrás empezar a enviar mensajes.
+  </Step>
+</Steps>
+
+<Callout kind="warning">
+  El número de teléfono que uses no debe estar registrado previamente en WhatsApp. Si ya tienes WhatsApp Business App, consulta la guía de migración.
+</Callout>
+
+## Método manual: Configuración paso a paso
+
+Si prefieres configurar manualmente o tienes requisitos específicos:
+
+1. **Crea tu WABA en Meta** — Ve a [business.facebook.com](https://business.facebook.com) y configura tu WhatsApp Business Account.
+2. **Genera un token de acceso** — Desde el panel de Meta, genera un token permanente.
+3. **Registra tu número** — Asigna y verifica tu número telefónico.
+4. **Configura el webhook** — Apunta el webhook de Meta hacia E-SMART360.
+5. **Conecta en E-SMART360** — Ve a Configuración > WhatsApp e ingresa tu token y Phone Number ID.
+
+## Verificación del perfil de negocio
+
+<Callout kind="warning">
+  Para acceder a funciones avanzadas (múltiples agentes, plantillas publicitarias, mensajes ilimitados), tu negocio debe estar verificado ante Meta.
+</Callout>
+
+El proceso de verificación requiere:
+- Documentos legales de tu empresa (RFC, acta constitutiva)
+- Coincidencia del nombre comercial
+- Revisión por parte de Meta (1-5 días hábiles)
+
+<ExpandableGroup>
+  <Expandable title="¿Qué hago si no tengo Facebook Business Manager?">
+    Embedded Signup te permite crear uno automáticamente durante el proceso. Si prefieres crearlo manualmente, consulta la guía "Crear Facebook Business Manager".
+  </Expandable>
+  <Expandable title="¿Puedo conectar varios números?">
+    Sí. Dependiendo de tu plan, puedes conectar múltiples números de WhatsApp. Cada número requiere su propio proceso de verificación.
+  </Expandable>
+  <Expandable title="¿Qué pasa si mi número ya está registrado en WhatsApp?">
+    Debes migrar tu número desde WhatsApp Business App o WhatsApp personal a la API. Consulta la guía de migración para hacerlo sin perder tu historial de conversaciones.
+  </Expandable>
+</ExpandableGroup>

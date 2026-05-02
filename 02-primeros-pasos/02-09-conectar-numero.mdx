@@ -1,0 +1,130 @@
+---
+title: "Conectar tu Número de Teléfono a E-SMART360"
+description: "Aprende a conectar y configurar tu número de WhatsApp Business API en la plataforma E-SMART360."
+---
+
+<Callout kind="info">
+  Una vez que tu número está verificado, el siguiente paso es conectarlo a E-SMART360 para empezar a crear automatizaciones, chatbots y campañas de marketing.
+</Callout>
+
+## ¿Qué Significa "Conectar" tu Número?
+
+Conectar tu número a E-SMART360 es el proceso de vincular tu cuenta de WhatsApp Business API con nuestra plataforma. Esto permite que E-SMART360:
+
+- **Gestione los mensajes** entrantes y salientes de tu número
+- **Ejecute automatizaciones** (chatbots, respuestas automáticas, secuencias)
+- **Acceda a las plantillas** de mensajes aprobadas
+- **Monitoree métricas** de conversación y calidad
+- **Integre con otras herramientas** como CRMs, formularios y plataformas de e-commerce
+
+## Métodos de Conexión
+
+<Tabs>
+  <Tab label="Conexión mediante Embedded Signup">
+    <Callout kind="success">
+      Método más rápido y recomendado. No requiere configurar manualmente el número en Meta.
+    </Callout>
+    
+    <Steps>
+      <Step title="Inicia sesión en E-SMART360">
+        Ve a tu panel de control y navega a **Configuración > WhatsApp > Conectar número**.
+      </Step>
+      <Step title="Selecciona Embedded Signup">
+        Haz clic en el botón **"Conectar con Facebook"**. Serás redirigido a una ventana segura de Meta.
+      </Step>
+      <Step title="Inicia sesión en Facebook">
+        Usa la cuenta asociada a tu Business Manager.
+      </Step>
+      <Step title="Selecciona tu cuenta de negocio">
+        Elige el Business Manager que creaste previamente.
+      </Step>
+      <Step title="Selecciona el número a conectar">
+        Elige entre las opciones disponibles:
+        - **Usar número existente**: Si ya tienes un número en WhatsApp Business API
+        - **Agregar número nuevo**: Para registrar uno nuevo
+      </Step>
+      <Step title="Verifica el número (si es nuevo)">
+        Si elegiste agregar un número nuevo, sigue el proceso de verificación por SMS o llamada.
+      </Step>
+      <Step title="Confirma los permisos">
+        Revisa y acepta los permisos que E-SMART360 necesita para gestionar tu número.
+      </Step>
+      <Step title="¡Listo!">
+        Una vez completado, el número aparecerá como **"Conectado"** en tu panel de E-SMART360.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab label="Conexión Manual">
+    <Callout kind="warning">
+      Este método requiere acceso directo a WhatsApp Business Manager y es útil si Embedded Signup no está disponible.
+    </Callout>
+    
+    <Steps>
+      <Step title="Obtén tu ID de número">
+        Ve a [WhatsApp Business Manager](https://business.facebook.com/wa/manage/phone-numbers/) y copia el ID de tu número.
+      </Step>
+      <Step title="Obtén el token de acceso">
+        Genera un token de acceso permanente desde la sección de **Configuración de API**.
+      </Step>
+      <Step title="Ingresa los datos en E-SMART360">
+        En tu panel, selecciona **"Conexión manual"** e ingresa:
+        - ID del número de WhatsApp
+        - Token de acceso
+        - ID de la cuenta de Business Manager
+      </Step>
+      <Step title="Verifica la conexión">
+        Haz clic en **"Probar conexión"**. Si todo es correcto, verás un mensaje de confirmación.
+      </Step>
+      <Step title="Guarda la configuración">
+        Confirma y guarda. El número aparecerá como conectado.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Configuración Post-Conexión
+
+Una vez conectado, verifica estos ajustes importantes:
+
+<Columns>
+  <Card title="📱 Mensaje de Bienvenida">
+    Actívalo desde WhatsApp Business Manager > Phone Numbers > Settings > Automation > Welcome Message.
+  </Card>
+  <Card title="💬 Icebreakers">
+    Configura preguntas predefinidas para iniciar conversaciones. Hasta 4 preguntas desde WhatsApp Manager.
+  </Card>
+  <Card title="📋 Comandos">
+    Agrega comandos con slash (/) para acciones rápidas de los usuarios.
+  </Card>
+  <Card title="🤖 Bot Manager">
+    En E-SMART360, ve a Bot Manager para crear los flujos que responderán a los icebreakers y comandos.
+  </Card>
+</Columns>
+
+## Validación de Conexión
+
+Para confirmar que todo funciona:
+
+1. Envía un mensaje de prueba a tu número de WhatsApp
+2. Verifica que aparezca en la **Bandeja de Entrada** de E-SMART360
+3. Revisa que el **Webhook** esté activo en WhatsApp Business Manager
+4. Confirma que el **estado** del número en tu panel muestre "Conectado y Activo"
+
+## Solución de Problemas
+
+| Problema | Causa | Solución |
+|----------|-------|----------|
+| Error "Número ya en uso" | El número está vinculado a otra plataforma | Migra el número o contacta a soporte |
+| Embedded Signup no carga | Bloqueador de anuncios o cookies | Desactiva bloqueadores o usa modo incógnito |
+| Token inválido | Token expirado o permisos insuficientes | Genera un nuevo token con permisos de administrador |
+| Webhook desconectado | URL del webhook cambiada | Verifica la URL del webhook en tu configuración |
+
+<Callout kind="tip">
+  **Nota importante**: Si planeas usar Click to WhatsApp Ads, tu número debe estar vinculado a una **Página de Facebook**. Sin esta conexión, los anuncios no funcionarán. Revisa la guía de [Facebook Business Manager](/02-primeros-pasos/02-08-crear-facebook-business) para más detalles.
+</Callout>
+
+## Próximos Pasos
+
+- [Activar el período de 7 días gratis](/02-primeros-pasos/02-10-siete-dias-gratis)
+- [Crear tu primer bot automatizado](/03-automatizacion/01-flow-builder-intro)
+- [Configurar el mensaje de bienvenida](/03-automatizacion/16-mensaje-bienvenida)

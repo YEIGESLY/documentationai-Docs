@@ -1,0 +1,70 @@
+---
+title: "Migración desde Otro BSP a E-SMART360"
+description: "Guía completa para migrar tu WhatsApp Business desde otro proveedor (BSP) a E-SMART360 sin perder tu número, cuota de mensajería ni reputación."
+---
+
+<Callout kind="info">
+  Migrar tu número de WhatsApp de otro BSP a E-SMART360 es un proceso sencillo que preserva tu número, historial de calidad, límite de mensajería y configuración de plantillas.
+</Callout>
+
+## ¿Qué se conserva al migrar?
+
+| Elemento | ¿Se conserva? |
+|---------|:-:|
+| Número de teléfono | ✅ Sí |
+| Quality Rating | ✅ Sí |
+| Messaging Tier | ✅ Sí |
+| Plantillas aprobadas | ✅ Sí |
+| Historial de conversaciones | ❌ No (solo en el BSP anterior) |
+| Configuración de webhook | ❌ No (debe reconfigurarse) |
+
+## Proceso de migración
+
+<Steps>
+  <Step title="Solicita el código de migración a tu BSP actual">
+    Contacta a tu proveedor actual y solicita el código de migración de tu número. Este código es necesario para transferir la propiedad.
+  </Step>
+  <Step title="Prepara tu número en E-SMART360">
+    Ve a Configuración > WhatsApp > Migrar número. Ingresa el código de migración proporcionado.
+  </Step>
+  <Step title="Verifica la propiedad del número">
+    Recibirás un código SMS o llamada en tu número. Ingresa el código para confirmar que eres el propietario.
+  </Step>
+  <Step title="Configuración automática">
+    E-SMART360 completará la migración. Tu perfil de negocio, plantillas y cuota de mensajería se transferirán automáticamente.
+  </Step>
+  <Step title="Verifica la conexión">
+    Envía un mensaje de prueba para confirmar que todo funciona correctamente.
+  </Step>
+</Steps>
+
+## Consideraciones importantes
+
+- **Tiempo de migración:** 5-15 minutos en promedio
+- **Sin tiempo de inactividad:** Tus clientes pueden seguir escribiéndote durante el proceso
+- **Sin pérdida de mensajes:** Los mensajes entrantes se almacenan hasta que completes la migración
+
+## Migración desde WhatsApp Business App
+
+Si actualmente usas la aplicación WhatsApp Business App en tu teléfono:
+
+1. Asegúrate de tener acceso al número (puedas recibir SMS)
+2. El número **debe estar registrado** en la app de WhatsApp Business
+3. Embedded Signup se encargará de migrarlo automáticamente
+4. La app de WhatsApp Business dejará de funcionar con ese número
+
+<Callout kind="warning">
+  Una vez migrado a la API, el número ya no funcionará en la aplicación de WhatsApp. Tus clientes no notarán la diferencia, pero tú gestionarás todo desde E-SMART360.
+</Callout>
+
+<ExpandableGroup>
+  <Expandable title="¿Puedo migrar si mi número está en WhatsApp personal?">
+    Sí, pero primero debes migrarlo a WhatsApp Business App y luego a la API. O puedes usar Embedded Signup que maneja ambos pasos.
+  </Expandable>
+  <Expandable title="¿Pierdo mi palomita verde?">
+    No. La palomita verde está asociada a tu negocio, no al BSP. La conservas al migrar.
+  </Expandable>
+  <Expandable title="¿Qué pasa con mis plantillas durante la migración?">
+    Las plantillas quedan almacenadas en Meta. Al migrar, E-SMART360 las sincronizará automáticamente.
+  </Expandable>
+</ExpandableGroup>

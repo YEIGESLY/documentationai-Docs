@@ -1,0 +1,111 @@
+---
+title: "Verificar tu Número de Teléfono en WhatsApp Business API"
+description: "Aprende a verificar tu número de teléfono para activar WhatsApp Business API en E-SMART360."
+---
+
+<Callout kind="info">
+  Antes de empezar a configurar tus automatizaciones, necesitas verificar que tu número de teléfono esté registrado y aprobado para usar WhatsApp Business API.
+</Callout>
+
+## ¿Por Qué es Necesaria la Verificación?
+
+WhatsApp Business API exige que los números de teléfono estén verificados para garantizar:
+
+- **Autenticidad**: Confirmar que el número pertenece a tu negocio
+- **Seguridad**: Evitar suplantación de identidad y spam
+- **Acceso completo**: Habilitar todas las funcionalidades de la API
+- **Calidad**: Mantener la reputación de la plataforma
+
+## Requisitos Previos
+
+Antes de verificar tu número, asegúrate de tener:
+
+- Una cuenta activa en E-SMART360
+- Número de teléfono que cumpla con los requisitos de WhatsApp
+- **Cuenta de Facebook Business Manager** creada y verificada
+- **Página de Facebook** vinculada a tu negocio
+
+<Expandable>
+  <ExpandableGroup title="Requisitos del número de teléfono">
+    - No debe estar registrado en WhatsApp Business API anteriormente
+    - Debe poder recibir llamadas o SMS con el código de verificación
+    - No puede estar asociado a WhatsApp Business App si ya migraste
+    - Debe ser un número real, no VoIP (a menos que el operador lo permita)
+  </ExpandableGroup>
+</Expandable>
+
+## Proceso de Verificación
+
+<Tabs>
+  <Tab label="Verificación por SMS">
+    <Steps>
+      <Step title="Inicia sesión en E-SMART360">
+        Accede a tu panel de control y navega a la sección de **Configuración de WhatsApp**.
+      </Step>
+      <Step title="Ingresa tu número">
+        Proporciona el número de teléfono completo con código de país. Ejemplo: +521234567890.
+      </Step>
+      <Step title="Solicita el código">
+        Haz clic en "Enviar código de verificación". WhatsApp enviará un código de 6 dígitos por SMS.
+      </Step>
+      <Step title="Ingresa el código">
+        Revisa tu bandeja de SMS y escribe el código recibido en el campo correspondiente.
+      </Step>
+      <Step title="Confirma la verificación">
+        Si el código es correcto, el sistema confirmará que tu número está verificado y listo para usar.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab label="Verificación por llamada">
+    <Steps>
+      <Step title="Solicita verificación por llamada">
+        En lugar de SMS, selecciona la opción "Llamada telefónica" para recibir el código.
+      </Step>
+      <Step title="Recibe la llamada automatizada">
+        Un sistema automatizado te llamará al número proporcionado. No contestes — escucha el código.
+      </Step>
+      <Step title="Ingresa el código dictado">
+        La llamada dictará un código de 6 dígitos. Ingresa ese código en la plataforma.
+      </Step>
+      <Step title="Finaliza la verificación">
+        Confirma el código para completar el proceso.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Solución de Problemas
+
+<Callout kind="warning">
+  Si el botón de verificación aparece deshabilitado o atenuado, puede deberse a que tu número ya está registrado en otra cuenta de WhatsApp Business API.
+</Callout>
+
+### Problemas Comunes
+
+| Problema | Causa | Solución |
+|----------|-------|----------|
+| El botón de verificación está gris | Número ya registrado | Migra el número o contacta a soporte |
+| No llega el código SMS | Bloqueo de operador | Solicita verificación por llamada |
+| Código inválido | Expiración del código | Solicita un nuevo código |
+| Error "Cuenta no verificada" | Facebook Business Manager incompleto | Completa la verificación de tu cuenta de negocio |
+
+## Verificación a través de Meta Business Manager
+
+En algunos casos, la verificación se gestiona directamente desde Meta Business Manager:
+
+1. Ve a [business.facebook.com](https://business.facebook.com)
+2. Navega a **Configuración de negocio** > **Cuentas** > **WhatsApp**
+3. Selecciona tu número y haz clic en "Verificar"
+4. Sigue las instrucciones en pantalla
+
+<Callout kind="tip">
+  **Recomendación**: Si planeas usar Click to WhatsApp Ads, asegúrate de que tu número esté vinculado a una **Página de Facebook** activa. Sin esta conexión, los anuncios no funcionarán correctamente.
+</Callout>
+
+## Próximos Pasos
+
+Una vez verificado tu número, ya puedes:
+
+- [Conectar tu número a E-SMART360](/02-primeros-pasos/02-09-conectar-numero)
+- [Crear tu primer chatbot automatizado](/03-automatizacion/01-flow-builder-intro)
+- [Configurar tu página de Facebook Business](/02-primeros-pasos/02-08-crear-facebook-business)
