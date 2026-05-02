@@ -19,8 +19,19 @@
             "icon": "rocket",
             "pages": [
               {
-                "title": "Introduction",
-                "path": "introduction",
+                "group": "Overview",
+                "pages": [
+                  {
+                    "title": "Introducción",
+                    "path": "introduction",
+                    "icon": "home"
+                  },
+                  {
+                    "title": "Plataforma Vistazo General",
+                    "path": "plataforma-overview",
+                    "icon": "lucide-user-round-pen"
+                  }
+                ],
                 "icon": "home"
               },
               {
