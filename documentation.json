@@ -15,7 +15,7 @@
         "icon": "book",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Empezemos",
             "icon": "rocket",
             "pages": [
               {
@@ -31,7 +31,7 @@
             ]
           },
           {
-            "group": "Core Concepts",
+            "group": "Primeros Pasos",
             "icon": "compass",
             "pages": [
               {
