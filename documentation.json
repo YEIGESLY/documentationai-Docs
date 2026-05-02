@@ -506,11 +506,6 @@
                 "path": "10-recursos/10-glosario"
               }
             ]
-          },
-          {
-            "group": "Ventas",
-            "pages": [],
-            "icon": "lucide-shopping-cart"
           }
         ]
       },
