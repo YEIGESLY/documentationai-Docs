@@ -1,0 +1,26 @@
+---
+title: "Restricción por Membresía"
+description: "Restringe el acceso a ciertos flujos según el tipo de membresía del contacto."
+---
+
+<Callout kind="info">La restricción por membresía permite ofrecer diferentes niveles de servicio según el tipo de cliente.</Callout>
+
+## Cómo Funciona
+- Asignas etiquetas o campos personalizados indicando el nivel (VIP, Premium, Regular).
+- En los flujos, agregas condiciones que verifican el nivel.
+- Según el nivel, el cliente tiene acceso a diferentes opciones.
+
+## Ejemplo
+| Nivel | Acceso |
+|-------|--------|
+| VIP | Soporte prioritario 24/7 + agente dedicado |
+| Premium | Soporte en horario laboral + chatbot avanzado |
+| Regular | Solo chatbot + FAQ |
+
+<Steps>
+  <Step title="Define niveles">Crea etiquetas o campos: VIP, Premium, Regular.</Step>
+  <Step title="Crea condiciones">En flujos, usa branching condicional según el nivel.</Step>
+  <Step title="Asigna niveles">Manual, por monto de compra o por integración.</Step>
+</Steps>
+
+<Callout kind="tip">Los clientes VIP pueden tener un flujo de bienvenida especial con acceso directo a agente humano sin pasar por el bot.</Callout>

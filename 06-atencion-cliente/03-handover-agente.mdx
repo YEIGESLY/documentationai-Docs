@@ -1,0 +1,24 @@
+---
+title: "Handover: Transferencia a Agente Humano"
+description: "Transfiere conversaciones del bot a un agente humano."
+---
+
+<Callout kind="info">El handover transfiere una conversación del chatbot a un agente humano cuando se requiere atención personalizada.</Callout>
+
+## ¿Cuándo Transferir?
+<Columns>
+  <Card title="Por solicitud">El cliente pide "hablar con un asesor".</Card>
+  <Card title="Por límite de intentos">Después de 3 respuestas No Match consecutivas.</Card>
+  <Card title="Por intención detectada">Al identificar quejas o problemas complejos.</Card>
+  <Card title="Por valor">Transacciones de alto valor que requieren negociación.</Card>
+</Columns>
+
+## Configurar Handover
+<Steps>
+  <Step title="Bloque de transferencia">En el Flow Builder, agrega bloque "Asignar agente".</Step>
+  <Step title="Selecciona agente o grupo">Asigna a un agente específico o al grupo disponible.</Step>
+  <Step title="Mensaje de pre-transferencia">"Te conecto con un asesor. Un momento por favor."</Step>
+  <Step title="Contexto para agente">Las variables del flujo se pasan al agente para contexto.</Step>
+</Steps>
+
+<Callout kind="tip">Siempre proporciona contexto al agente: producto que consultaba, lo que ya se le dijo, motivo de transferencia.</Callout>
