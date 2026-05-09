@@ -53,8 +53,18 @@
                 "group": "Primeros Pasos",
                 "pages": [
                   {
-                    "title": "Conexión a WhatsApp",
-                    "path": "02-primeros-pasos/02-02-conexion-whatsapp"
+                    "group": "WhatsApp",
+                    "pages": [
+                      {
+                        "title": "Guía paso a paso para crear un chatbot de WhatsApp",
+                        "path": "gua-paso-a-paso-para-crear-un-chatbot-de-whatsapp"
+                      },
+                      {
+                        "title": "Conexión a WhatsApp",
+                        "path": "02-primeros-pasos/02-02-conexion-whatsapp"
+                      }
+                    ],
+                    "icon": "lucide-user-check"
                   },
                   {
                     "title": "Embedded Signup",
