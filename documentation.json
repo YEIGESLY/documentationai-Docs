@@ -60,6 +60,10 @@
                         "path": "gua-paso-a-paso-para-crear-un-chatbot-de-whatsapp"
                       },
                       {
+                        "title": "Cómo Migrar tu Cuenta de WhatsApp Existente a la WhatsApp Cloud API",
+                        "path": "cmo-migrar-tu-cuenta-de-whatsapp-existente-a-la-whatsapp-cloud-api"
+                      },
+                      {
                         "title": "Conexión a WhatsApp",
                         "path": "02-primeros-pasos/02-02-conexion-whatsapp"
                       }
