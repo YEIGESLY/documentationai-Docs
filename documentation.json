@@ -56,6 +56,10 @@
                     "group": "WhatsApp",
                     "pages": [
                       {
+                        "title": "Actualiza Plantillas de WhatsApp Fácilmente en E-SMART360",
+                        "path": "actualiza-plantillas-de-whatsapp-fcilmente-en-e-smart360"
+                      },
+                      {
                         "title": "Guía paso a paso para crear un chatbot de WhatsApp",
                         "path": "gua-paso-a-paso-para-crear-un-chatbot-de-whatsapp"
                       },
